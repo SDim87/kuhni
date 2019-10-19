@@ -1,0 +1,43 @@
+@import (reference) '../../less/variables.less';
+
+.mark-animate {
+  position: relative;
+
+  overflow: hidden;
+
+  width: 1px;
+  height: 56px;
+  margin: 32px auto;
+
+  border-radius: 3px;
+  background-color: @color-second;
+  animation: animateBg 2s ease-in-out infinite;
+
+   @media screen and (max-width: @phone-landscape) {
+    display: none;
+    animation: none;
+  }
+
+  @keyframes animateBg {
+    0% {
+      opacity: 0;
+      transform: scaleY(0);
+      transform-origin: 100% 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    49.9% {
+      transform: scaleY(1);
+      transform-origin: 100% 0;
+    }
+    50% {
+      transform: scaleY(1);
+      transform-origin: 0 100%;
+    }
+    100% {
+      transform: scaleY(0);
+      transform-origin: 0 100%;
+    }
+  }
+}

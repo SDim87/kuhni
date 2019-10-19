@@ -1,0 +1,31 @@
+@import (reference) '../../less/variables.less';
+
+.container {
+  max-width: 1680px;
+  padding: 0 64px;
+  margin: 0 auto;
+
+  @media screen and (max-width: @tablet-small) {
+    padding: 0 48px;
+  }
+
+  @media screen and (max-width: @phone-landscape) {
+    padding: 0 16px;
+  }
+
+  &_small {
+    max-width: 1200px;
+  }
+
+  &_tablet {
+    @media screen and (min-width: @tablet-small + 1) {
+      padding: 0;
+      max-width: none;
+      margin: 0;
+    }
+  }
+
+  &_user {
+    margin: 0;
+  }
+}

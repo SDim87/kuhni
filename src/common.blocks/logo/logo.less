@@ -1,0 +1,22 @@
+@import (reference) '../../less/variables.less';
+
+.logo {
+  width: 372px;
+  height: 31px;
+  display: block;
+  color: @color-second;
+  position: relative;
+
+   @media screen and (max-width: @phone-landscape) {
+    width: 226px;
+    height: 18px;
+  }
+
+  &_header {
+    z-index: 1001;
+  }
+
+  & img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,134 @@
+@import (reference) '../../less/variables.less';
+
+.header {
+  margin-top: 16px;
+  padding: 24px 0;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  
+   @media screen and (max-width: @tablet) {
+    margin-top: 16px;
+  }
+  
+   @media screen and (max-width: @phone-landscape) {
+    min-height: 56px;
+    padding: 0;
+  }
+  
+  &.is-opened {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+  }
+  
+  &.is-fixed {
+    background-color: @color-brand;
+    transform: translateY(-120%);
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    opacity: 0;
+  }
+  
+  &.is-transition {
+    transition: all 0.4s ease-in-out;
+  }
+
+  &.is-show .icon_logo {
+    fill: @color-second;
+  }
+
+  &.is-show  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+
+   @media screen and (max-width: @phone-landscape) {
+    min-height: 56px;
+  }
+}
+
+.header__btn {
+  color: @color-text;
+  display: flex;
+  align-items: center;
+  text-transform: lowercase;
+  margin-left: auto;
+  position: relative;
+  z-index: 1001;
+  padding-left: 4px;
+
+   @media screen and (max-width: @tablet-small - 1) {
+    padding-left: 0;
+  }
+
+  & span {
+    font-size: 16px;
+    transition: @transition;
+
+     @media screen and (max-width: @tablet-small - 1) {
+      display: none;
+    }
+  }
+
+  & span.is-opened {
+    color: transparent;
+    font-size: 0;
+  }
+
+  &.is-opened {
+    color: @color-text-second;
+  }
+
+  & .icon {
+    margin-left: 4px;
+
+     @media screen and (max-width: @tablet-small - 1) {
+      margin: 0;
+    }
+
+     @media screen and (max-width: @phone-landscape) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &.is-opened .icon {
+    fill: @color-first;
+  }
+
+  &:focus {
+    outline-color: @color-brand;
+  }
+}
+
+.header__menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: @color-second;
+  z-index: 1000;
+  min-height: 100vh;
+
+   @media screen and (max-width: @tablet-small - 1) {
+    padding-top: 88px;
+  }
+
+   @media screen and (max-width: @phone-landscape) and (orientation: landscape) {
+    padding-top: 64px;
+  }
+}

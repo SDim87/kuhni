@@ -1,0 +1,239 @@
+@import (reference) '../../less/variables.less';
+
+.main-card {
+  position: relative;
+
+  @media screen and (max-width: @tablet-small) {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 120px;
+
+    @media screen and (max-width: @desktop-small) {
+      margin-bottom: 80px;
+    }
+
+    @media screen and (max-width: @tablet) {
+      margin-bottom: 120px;
+    }
+
+    @media screen and (max-width: @phone-landscape) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.main-card__wrapper {
+  display: flex;
+  align-items: center;
+
+  min-height: 1080px;
+
+  @media screen and (max-width: @desktop-small) {
+    min-height: 824px;
+  }
+
+  @media screen and (max-width: @tablet) {
+    min-height: 580px;
+  }
+
+  @media screen and (max-width: @tablet-small) {
+    align-items: flex-start;
+
+    min-height: 395px;
+    padding: 62px 0;
+  }
+
+  @media screen and (max-width: @tablet-small) {
+    padding: 0;
+  }
+
+  @media screen and (max-width: @phone-landscape) {
+    min-height: auto;
+  }
+
+  .main-card_reverse & {
+    justify-content: flex-end;
+
+    @media screen and (max-width: @phone-landscape) {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.main-card__left {
+  position: relative;
+
+  @media screen and (max-width: @desktop-small) {
+    left: 80px;
+  }
+
+  @media screen and (max-width: @tablet) {
+    left: 0;
+  }
+
+  @media screen and (max-width: @tablet-small) {
+    margin-top: 61px;
+  }
+
+  @media screen and (max-width: @phone-landscape) {
+    margin-top: 48px;
+  }
+
+  .main-card_reverse & {
+    @media screen and (max-width: @desktop-small) {
+      left: 0;
+    }
+  }
+}
+
+.main-card__content {
+  position: relative;
+  z-index: 5;
+
+  @media screen and (max-width: @phone-landscape) {
+    padding-top: 48px;
+  }
+}
+
+.main-card__text {
+  max-width: 790px;
+  margin-left: 168px;
+
+  font-size: 21px;
+  line-height: 1.4;
+
+  @media screen and (max-width: @desktop-small) {
+    max-width: 552px;
+    margin-left: 120px;
+
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @media screen and (max-width: @tablet) {
+    max-width: 320px;
+    margin-left: 88px;
+    margin-top: 40px;
+
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  @media screen and (max-width: @phone-landscape) {
+    margin: 0;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  &_none_tablet {
+    @media screen and (max-width: @tablet) {
+      display: none;
+    }
+  }
+}
+
+.main-card__right {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: 0;
+
+  width: 1080px;
+  height: 745px;
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  transform: translateY(-50%);
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-image: @gradient-first;
+    content: '';
+
+    @media screen and (max-width: @tablet-small) {
+      background-image: @gradient-second;
+    }
+  }
+
+  .main-card_reverse &::before {
+    background-image: @gradient-first-reverse;
+  }
+
+  @media screen and (max-width: @desktop-small) {
+    width: 824px;
+    height: 568px;
+  }
+
+  @media screen and (max-width: @tablet) {
+    width: 620px;
+    height: 428px;
+  }
+
+  @media screen and (max-width: @tablet-small) {
+    width: 396px;
+    height: 273px;
+  }
+
+  @media screen and (max-width: @phone-landscape) {
+    top: 0;
+
+    width: 100%;
+    height: 245px;
+
+    transform: none;
+  }
+
+  .main-card_reverse & {
+    right: auto;
+    left: 0;
+  }
+}
+
+.main-card__decor {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+
+  box-sizing: border-box;
+  width: 745px;
+  height: 1080px;
+
+  border: 1px solid @color-brand;
+
+  @media screen and (max-width: @desktop-small) {
+    width: 568px;
+    height: 824px;
+  }
+
+  @media screen and (max-width: @tablet) {
+    width: 320px;
+    height: 580px;
+  }
+
+  @media screen and (max-width: @tablet-small) {
+    width: 271px;
+    height: 396px;
+  }
+
+  @media screen and (max-width: @phone-landscape) {
+    display: none;
+  }
+
+  .main-card_reverse & {
+    right: auto;
+    left: 32px;
+  }
+}

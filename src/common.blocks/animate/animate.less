@@ -1,0 +1,37 @@
+@import (reference) '../../less/variables.less';
+
+.animate {}
+
+.animate__title {
+  transform: translateY(30%);
+  opacity: 0;
+  transition: all 0.8s ease-in-out 1.5s;
+
+  &.is-opened {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.animate__banner-right {
+  // transform: translateX(30%);
+  opacity: 0;
+  transition: all 0.8s ease-in-out 2s;
+
+  &.is-opened {
+    // transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate__banner-content {
+  transform: translateY(30%);
+  opacity: 0;
+  transition: all 0.8s ease-in-out 2s;
+
+  &.is-opened {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

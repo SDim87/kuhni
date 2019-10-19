@@ -1,0 +1,110 @@
+@import (reference) './variables.less';
+
+@font-face {
+  font-family: 'Gotham Pro';
+  font-weight: 300;
+  font-style: normal;
+
+  src: url('../assets/fonts/GothamPro-Light.woff2') format('woff2'),
+    url('../assets/fonts/GothamPro-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  font-weight: 400;
+  font-style: normal;
+
+  src: url('../assets/fonts/GothamPro.woff2') format('woff2'),
+    url('../assets/fonts/GothamPro.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Gotham Pro';
+  font-weight: 500;
+  font-style: normal;
+
+  src: url('../assets/fonts/GothamPro-Medium.woff2') format('woff2'),
+    url('../assets/fonts/GothamPro-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  font-weight: 700;
+  font-style: normal;
+
+  src: url('../assets/fonts/GothamPro-Bold.woff2') format('woff2'),
+    url('../assets/fonts/GothamPro-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  font-weight: 900;
+  font-style: normal;
+
+  src: url('../assets/fonts/GothamPro-Black.woff2') format('woff2'),
+    url('../assets/fonts/GothamPro-Black.woff') format('woff');
+}
+
+html {
+  color: @color-text;
+
+  font: 16px/1.5 'Gotham Pro', Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  // height: 100%;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+p::selection,
+span::selection,
+li::selection,
+a::selection,
+td::selection,
+th::selection {
+  background-color: @color-brand;
+}
+
+a:focus,
+button:focus,
+div:focus {
+  // outline-color: @color-brand;
+  // outline-style: dashed;
+  outline-style: none; /* Игорь попросил убрать весь focus */
+}
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}

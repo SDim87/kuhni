@@ -1,0 +1,149 @@
+@import (reference) '../../less/variables.less';
+
+.reviews {
+  columns: 2;
+  column-gap: 32px;
+
+  @media screen and (max-width: @tablet) {
+    columns: 1;
+  }
+}
+
+.reviews__card {
+  display: inline-block;
+
+  margin-bottom: 32px;
+  padding: 40px;
+
+  background-color: @color-second;
+
+  @media screen and (max-width: @phone-landscape) {
+    padding: 24px;
+  }
+}
+
+.reviews__info {
+  display: flex;
+
+  margin-bottom: 40px;
+
+  @media screen and (max-width: @phone-landscape) {
+    margin-bottom: 24px;
+  }
+}
+
+.reviews__face {
+  flex: 0 0 auto;
+
+  width: 56px;
+  height: 56px;
+}
+
+.reviews__box {
+  margin-left: 16px;
+}
+
+.reviews__name {
+  color: @color-text-second;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.25;
+
+  @media screen and (max-width: @phone-landscape) {
+    font-size: 16px;
+  }
+}
+
+.reviews__prof {
+  color: @color-third;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.reviews__text {
+  margin-bottom: 16px;
+
+  color: @color-text-second;
+
+  @media screen and (max-width: @phone-landscape) {
+    font-size: 13px;
+  }
+}
+
+.reviews__gallery {
+  display: flex;
+  justify-content: flex-start;
+
+  max-width: max-content;
+  overflow: hidden;
+}
+
+.reviews__link {
+  position: relative;
+
+  display: block;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    opacity: 0;
+    background-color: @color-first;
+    content: '';
+    transition: @transition;
+  }
+
+  & .icon {
+    opacity: 0;
+  }
+
+  &:hover .icon {
+    opacity: 1;
+  }
+
+  &:hover::before {
+    opacity: .5;
+  }
+}
+
+
+
+
+.blueimp-gallery > .indicator > li {
+  display: inline-block;
+
+  box-sizing: content-box;
+  width: 50px;
+  height: 50px;
+  margin: 6px 3px 0 3px;
+
+  opacity: .5;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background-color: @color-gray-light;
+  cursor: pointer;
+  transition: @transition;
+
+  &:hover {
+    border: 1px solid @color-brand;
+  }
+}
+
+
+.blueimp-gallery > .indicator > li.active {
+  border: 1px solid @color-brand;
+}
+
+.blueimp-gallery > .indicator {
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  white-space: nowrap;
+}

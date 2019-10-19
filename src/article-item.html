@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff0000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <title>Kitchens</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body class="body">
+  <div class="body__bg js-category__bg"></div>
+  <header class="header js-header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="logo logo_header js-header__logo" href="index.html" aria-label="Логотип">
+          <img class="image image_logo is-opened" src="./common.blocks/logo/logo.svg" alt="Логотип Нестандартные кухни">
+          <svg class="icon icon_logo icon_logo_nav image_logo image_logo_black" focusable="false">
+            <use xlink:href="#logo-black"></use>
+          </svg>
+          <svg class="icon icon_logo icon_logo_nav image_logo_white" focusable="false">
+            <use xlink:href="#logo-white"></use>
+          </svg>
+        </a>
+        <button class="header__btn js-header__btn">
+          <span>Меню</span>
+          <span class="is-opened">Закрыть</span>
+          <svg class="icon icon_second icon_size_l icon_burger is-opened" focusable="false">
+            <use xlink:href="#hamburger"></use>
+          </svg>
+          <svg class="icon icon_second icon_size_l icon_close" focusable="false">
+            <use xlink:href="#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="header__menu js-header__menu">
+      <nav class="nav">
+        <div class="nav__left">
+          <ul class="nav__list">
+            <li class="nav__item js-nav__item is-active"
+              data-background="${require('./common.blocks/nav/nav__bg_1.jpg')}">
+              <a class="nav__link">О нас</a>
+            </li>
+            <li class="nav__item js-nav__item" data-background="${require('./common.blocks/nav/nav__bg_2.jpg')}">
+              <a href="categories.html" class="nav__link">Кухни</a>
+            </li>
+            <li class="nav__item js-nav__item" data-background="${require('./common.blocks/nav/nav__bg_3.jpg')}">
+              <a href="article-list.html" class="nav__link">Покупателям</a>
+            </li>
+            <li class="nav__item js-nav__item" data-background="${require('./common.blocks/nav/nav__bg_4.jpg')}">
+              <a href="reviews.html" class="nav__link">Отзывы</a>
+            </li>
+            <li class="nav__item js-nav__item" data-background="${require('./common.blocks/nav/nav__bg_5.jpg')}">
+              <a href="contacts.html" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__right">
+          <div class="nav__bg js-nav__bg"
+            style="background-image: url(${require('./common.blocks/nav/nav__bg_default.jpg')})"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main main_indent_inner js-header__main">
+    <div class="container container_user">
+      <div class="body__indent body__indent_m">
+        <div class="user-content user-content_page user-content_order_l">
+          <h1>Серый цвет на кухне — с чем его сочетать?</h1>
+          <p>Есть расхожее интерьерное правило: всё, что покупается в дом надолго, должно быть белым, серым или
+            деревянным — а цвет придёт вместе с бытом. Соглашусь. Другой вопрос: какой именно серый стоит взять для
+            кухни? Какой интенсивности, на каких фактурах и материалах его применить? — Объясню, как объясняю своим
+            заказчикам.</p>
+          <img src="./common.blocks/user-content/user-content__img-1.jpg" alt="img">
+          <h2>1. Серые стены и серая кухня — будет очень бледно?</h2>
+          <p>Нет, если правильно обыграть это сочетание, использовать разные оттенки и фактуры — например, бетон
+            с гладкими материалами. В моде всё брутальное и «грязноватое», к тому же, текстура у бетона и сама по себе
+            не скучная: неоднородность материала и разводы создают своеобразный рисунок. Кроме того, бетонный серый
+            легко уравновесить белыми и чёрными оттенками.
+          </p>
+          <p>Если брутальность бетона вам не близка, а идея тотально серого интерьера кажется неинтересной, обратите
+            внимание на классическое противопоставление матовых и глянцевых материалов. В проекте на фото лаконичная
+            серая кухня оформлена как единый крупный объём, но разнообразия интерьеру придают контрастная глянцевая
+            вставка фартука и беспроигрышные дополнительные оттенки —тёмная древесина и белизна плафонов.
+          </p>
+          <h2>2. Какой лучше взять — серый или бежевый?</h2>
+          <p>Говоря о кухне в нейтральных тонах, наши заказчики обычно имеют в виду либо серую, либо бежевую гамму — а
+            ведь эти оттенки можно успешно сочетать в рамках одного помещения. Очень удачный пример на фото: в дизайне
+            гарнитура обыграли два оттенка серого, а стены и фартук оформили в бежевых тонах. Кстати, обеденная группа
+            тоже часть кухни, и здесь она стала полноценным продолжением композиции: сероватую поверхность стола
+            «подружили» со стульями разных древесных оттенков.</p>
+          <table>
+            <tr>
+              <th>Heading 1</th>
+              <th>Heading 2</th>
+              <th>Heading 3</th>
+            </tr>
+            <tr>
+              <td>Cell 1</td>
+              <td>Cell 2</td>
+              <td>Cell 3</td>
+            </tr>
+            <tr>
+              <td>Cell 1</td>
+              <td>Cell 2</td>
+              <td>Cell 3</td>
+            </tr>
+            <tr>
+              <td>Cell 1</td>
+              <td>Cell 2</td>
+              <td>Cell 3</td>
+            </tr>
+          </table>
+          <p>Говоря о кухне в нейтральных тонах, наши заказчики обычно имеют в виду либо серую, либо бежевую гамму — а
+            ведь эти оттенки можно успешно сочетать в рамках одного помещения. Очень удачный пример на фото: в дизайне
+            гарнитура обыграли два оттенка серого, а стены и фартук оформили в бежевых тонах. Кстати, обеденная группа
+            тоже часть кухни, и здесь она стала полноценным продолжением композиции: сероватую поверхность стола
+            «подружили» со стульями разных древесных оттенков:</p>
+          <ul>
+            <li>Черная пантера
+            <li>Сонный лес</li>
+            <li>Кипарисовая роща</li>
+          </ul>
+          <p>Наши заказчики порой отказываются от серого, потому что считают его мрачным — но дело, конечно, не в цвете,
+            а в его сочетании с другими оттенками. Разве выглядит тускло серый в сочетании с жёлтым? Проект на фото
+            смотрится, напротив, очень жизнерадостно. Обратите внимание, что композиция кухни симметрична, и серые
+            створки расположены по углам, а светлые — по центру: это распределение помогает сохранить визуальную
+            лёгкость интерьера.</p>
+        </div>
+      </div>
+      <div class="body__indent body__indent_m">
+        <section class="toggle-page">
+          <h2 class="visually-hidden">Постраничная навигация</h2>
+          <a class="toggle-page__link" href="#">
+            <div class="toggle-page__img toggle-page__img_prev js-toggle-page__img"
+              data-image="${require('./common.blocks/toggle-page/toggle-page__img-1.jpg')}">
+            </div>
+            <div class="toggle-page__box toggle-page__box_prev">
+              <p class="toggle-page__name">9 вариантов, где проходная кухня рядом с коридором</p>
+              <p class="toggle-page__arrow">
+                <svg class="icon icon_size_xs icon_second" focusable="false">
+                  <use xlink:href="#arrow-left"></use>
+                </svg> Предыдущая
+              </p>
+            </div>
+          </a>
+          <a class="toggle-page__link" href="#">
+            <div class="toggle-page__box toggle-page__box_next">
+              <p class="toggle-page__name">Как правильно: Освободить кухонный фартук</p>
+              <p class="toggle-page__arrow toggle-page__arrow_next">Следующая
+                <svg class="icon icon_size_xs icon_second" focusable="false">
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </p>
+            </div>
+            <div class="toggle-page__img toggle-page__img_next js-toggle-page__img"
+              data-image="${require('./common.blocks/toggle-page/toggle-page__img-1.jpg')}"></div>
+          </a>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <ul class="footer__left">
+          <li class="footer__item">
+            <a class="footer__link link link_second" href="https://yandex.ru/maps/-/CGv1yQZ1" target="_blank">
+              <svg class="icon icon_size_sm icon_brand" focusable="false">
+                <use xlink:href="#marker-map"></use>
+              </svg>
+              <span>Московская область, рабочий посёлок Новоивановское, ул. Агрохимиков, 1 (ТЦ «Мебель России»)</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link link_second" href="https://yandex.ru/maps/-/CGv1yS3G" target="_blank">
+              <svg class="icon icon_size_sm icon_brand" focusable="false">
+                <use xlink:href="#marker-map"></use>
+              </svg>
+              <span>Московская область, г. Красногорск, ул. Ленина, 2 (ТЦ «Красный кит»)</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link link_second" href="https://yandex.ru/maps/-/CGv1yXOU" target="_blank">
+              <svg class="icon icon_size_sm icon_brand" focusable="false">
+                <use xlink:href="#marker-map"></use>
+              </svg>
+              <span>Московская область, г. Мытищи, Шараповский проезд, 2с4</span>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__right">
+          <a class="logo" href="index.html">
+            <svg class="icon icon_logo_footer" focusable="false">
+              <use xlink:href="#logo-footer"></use>
+            </svg>
+          </a>
+          <p class="footer__info">Производитель нестандартных кухонь в Москве и Подмосковье, 2019</p>
+          <a class="footer__phone link link_second" href="tel:+74956425000">+7(495) 642-50-00</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="pattern pattern_small"></div>
+
+  <div class="popup mfp-with-anim mfp-hide" id="popup-form">
+    <form class="form" action="#">
+      <div class="form-group">
+        <input class="form-control" id="name" type="text" autocomplete="on">
+        <span class="form__line"></span>
+        <label class="control-label" for="name">Как Вас зовут?</label>
+      </div>
+      <div class="form-group">
+        <input class="form-control" id="phone" type="tel" autocomplete="on">
+        <span class="form__line"></span>
+        <label class="control-label" for="phone">Номер телефона</label>
+      </div>
+      <div class="form-group">
+        <input class="form-control" id="email" type="email" autocomplete="on">
+        <span class="form__line"></span>
+        <label class="control-label" for="email">email</label>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control form-control_textarea" id="message" name="message"></textarea>
+        <span class="form__line"></span>
+        <label class="control-label" for="message">Комментарий к заявке</label>
+      </div>
+      <button class="button button_brand button_size_m button_centered"><span>Отправить</span></button>
+    </form>
+  </div>
+</body>
+
+</html>

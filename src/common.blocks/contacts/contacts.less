@@ -1,0 +1,102 @@
+@import (reference) '../../less/variables.less';
+
+.contacts {}
+
+.contacts__head {
+  position: relative;
+  margin-bottom: 80px;
+
+  @media screen and (max-width: @tablet - 1) {
+    margin-bottom: 100px;
+  }
+
+  @media screen and (max-width: @tablet-small) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (max-width: @phone-landscape) {
+    margin-bottom: 48px;
+  }
+}
+
+.contacts__wrap {
+  display: flex;
+
+  @media screen and (max-width: @tablet - 1) {
+    display: block;
+    max-width: 660px;
+  }
+}
+
+.contacts__left {
+  max-width: 384px;
+  margin-right: 64px;
+  flex: 0 0 auto;
+
+  @media screen and (max-width: @tablet - 1) {
+    margin-bottom: 40px;
+  }
+}
+
+.contacts__box {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.contacts__phone {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.contacts__descr {
+  color: @color-third;
+}
+
+.contacts__address {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 48px;
+  }
+
+  & .icon {
+    flex: 0 0 auto;
+    
+    @media screen and (max-width: @phone-landscape) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.contacts__text {
+  margin-left: 16px;
+
+  @media screen and (max-width: @phone-landscape) {
+    margin-left: 8px;
+    font-size: 13px;
+  }
+}
+
+.contacts__btn {
+  display: flex;
+  justify-content: flex-end;
+
+  @media screen and (max-width: @phone-small) {
+    display: block;
+  }
+
+  & .button {
+    @media screen and (max-width: @phone-small) {
+      display: block;
+    }
+  }
+}

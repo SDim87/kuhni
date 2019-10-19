@@ -1,0 +1,144 @@
+@import (reference) '../../less/variables.less';
+
+.banner {
+  position: relative;
+
+  max-width: 1390px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+
+   @media screen and (max-width: @desktop-small) {
+    max-width: 1088px;
+    padding-bottom: 0;
+  }
+}
+
+.banner__left {
+  position: relative;
+  z-index: 10;
+
+   @media screen and (max-width: @desktop-small) {
+    max-width: 1088px;
+  }
+}
+
+.banner__title {
+  padding-top: 16px;
+
+   @media screen and (max-width: @desktop-small) {
+    padding-top: 24px;
+  }
+
+   @media screen and (max-width: @phone-landscape) {
+    padding-top: 16px;
+  }
+}
+
+.banner__content {
+  margin-left: 144px;
+
+   @media screen and (max-width: @desktop-small) {
+    max-width: 752px;
+    margin-left: 112px;
+  }
+
+   @media screen and (max-width: @tablet) {
+    max-width: 584px;
+    margin-left: 88px;
+  }
+
+   @media screen and (max-width: @phone-landscape) {
+    margin-left: 0;
+  }
+}
+
+.banner__text {
+  max-width: 960px;
+  margin: 48px 0;
+
+   @media screen and (max-width: @tablet) {
+    margin: 24px 0;
+  }
+
+   @media screen and (max-width: @phone-landscape) {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}
+
+.banner__phone {
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.banner__right,
+.banner__back {
+  width: 670px;
+  height: 670px;
+
+   @media screen and (max-width: @desktop-small) {
+    width: 528px;
+    height: 528px;
+  }
+
+   @media screen and (max-width: @tablet) {
+    width: 320px;
+    height: 320px;
+  }
+
+   @media screen and (max-width: @phone-landscape) {
+    width: 136px;
+    height: 136px;
+  }
+}
+
+.banner__right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::before {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-image: @gradient-first;
+    content: '';
+  }
+}
+
+.banner__right img {
+  position: relative;
+  z-index: 2;
+
+  object-fit: cover;
+}
+
+.banner__back {
+  position: absolute;
+  z-index: 1;
+  top: -40px;
+  right: -40px;
+
+   @media screen and (max-width: @desktop-small) {
+    top: -32px;
+    right: -32px;
+  }
+
+   @media screen and (max-width: @tablet) {
+    top: -24px;
+    right: -24px;
+  }
+
+   @media screen and (max-width: @phone-landscape) {
+    top: -8px;
+    right: -8px;
+  }
+}

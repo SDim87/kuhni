@@ -1,0 +1,162 @@
+@import (reference) '../../less/variables.less';
+
+.square {
+  position: absolute;
+
+  box-sizing: border-box;
+  width: 528px;
+  height: 528px;
+
+  content: '';
+  transition: color .25s;
+
+  @media screen and (max-width: @desktop-small) {
+    width: 336px;
+    height: 336px;
+  }
+
+  @media screen and (max-width: @tablet) {
+    width: 196px;
+    height: 196px;
+  }
+
+  @media screen and (max-width: @phone-landscape) {
+    width: 140px;
+    height: 140px;
+  }
+
+  &_pos_first {
+    transform: translateY(-50%);
+    z-index: 5;
+    top: 50%;
+    left: 0;
+
+    @media screen and (max-width: @tablet-small) {
+      top: 0;
+      transform: none;
+    }
+
+    @media screen and (max-width: @phone-landscape) {
+      left: -16px;
+    }
+  }
+
+  &_small {
+    width: 160px;
+    height: 160px;
+    z-index: -1;
+
+    @media screen and (max-width: @tablet-small) {
+      width: 72px;
+      height: 72px;
+    }
+
+    @media screen and (max-width: @phone-landscape) {
+      left: -16px;
+    }
+  }
+
+  &_banner {
+    width: 670px;
+    height: 670px;
+    z-index: -1;
+    top: -40px;
+    right: -40px;
+
+    @media screen and (max-width: @desktop-small) {
+      top: -32px;
+      right: -32px;
+      width: 530px;
+      height: 530px;
+    }
+    
+    @media screen and (max-width: @tablet) {
+      top: -24px;
+      right: -24px;
+      width: 320px;
+      height: 320px;
+    }
+    
+    @media screen and (max-width: @phone-landscape) {
+      top: -8px;
+      right: -8px;
+      width: 136px;
+      height: 136px;
+    }
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+
+    box-sizing: inherit;
+    width: 100%;
+    width: 0;
+    height: 100%;
+    height: 0;
+
+    border: 1px solid transparent;
+    content: '';
+    transition: color 1s;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+    bottom: 0;
+  }
+
+  &.is-visible {
+    color: @color-brand;
+  }
+
+  &.is-visible::before,
+  &.is-visible::after {
+    width: 100%;
+    height: 100%;
+  }
+
+  &.is-visible::before {
+    border-top-color: @color-brand;
+    border-right-color: @color-brand;
+    transition: width .25s ease-out,
+      /* Width expands first*/
+      height .25s ease-out .25s;
+    /* And then height*/
+  }
+
+  &.is-visible::after {
+    border-bottom-color: @color-brand;
+    border-left-color: @color-brand;
+    background-color: @color-brand;
+    transition: border-color 0s ease-out .25s,
+      /* Wait for ::before to finish before showing border*/
+      width .25s ease-out .5s,
+      /* And then exanding width */
+      height .25s ease-out .75s,
+      background-color .25s ease-out 1s;
+    /* And finally height*/
+  }
+
+  &_banner.is-visible::before {
+    transition: width .25s ease-out,
+      /* Width expands first*/
+      height .25s ease-out .25s;
+    /* And then height*/
+  }
+
+  &_banner.is-visible::after {
+    background-color: transparent;
+    transition: border-color 0s ease-out .25s,
+      /* Wait for ::before to finish before showing border*/
+      width .25s ease-out .5s,
+      /* And then exanding width */
+      height .25s ease-out .75s;
+    /* And finally height*/
+  }
+
+}

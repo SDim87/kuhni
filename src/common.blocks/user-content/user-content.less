@@ -1,0 +1,211 @@
+@import (reference) '../../less/variables.less';
+
+.user-content {
+  font-size: 16px;
+  line-height: 24/16;
+
+  @media screen and (max-width: @tablet-small - 1) {
+    font-size: 14px;
+  }
+
+  &_small {
+    max-width: 864px;
+  }
+
+  &_page {
+    overflow: hidden;
+
+    max-width: 1104px;
+    margin-left: 144px;
+
+    @media screen and (max-width: @desktop-small) {
+      max-width: 864px;
+      margin-left: 112px;
+    }
+
+    @media screen and (max-width: @tablet-landscape) {
+      margin: 0 auto;
+    }
+  }
+
+  &_center {
+    margin: 0 auto;
+  }
+
+  &_order_m {
+    margin-bottom: 80px;
+
+    @media screen and (max-width: @tablet) {
+      margin-bottom: 40px;
+    }
+  }
+
+  p:not(:first-child),
+  b:not(:first-child),
+  ul:not(:first-child),
+  ol:not(:first-child),
+  table:not(:first-child) {
+    margin-top: 24px;
+  }
+
+  p:not(:last-child),
+  b:not(:first-child),
+  ul:not(:last-child),
+  ol:not(:last-child),
+  table:not(:first-child) {
+    margin-bottom: 24px;
+  }
+
+  ol {
+    padding-left: 24px;
+  }
+
+  ul,
+  ol {
+    list-style-position: inside;
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  img:not(:first-child),
+  iframe:not(:first-child) {
+    margin-top: 32px;
+  }
+
+  img:not(:last-child),
+  iframe:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  img {
+    display: block;
+
+    max-width: 100%;
+  }
+
+  iframe {
+    display: block;
+
+    width: 100%;
+    height: 554px;
+
+    @media screen and (max-width: @tablet - 1) {
+      height: 400px;
+    }
+
+    @media screen and (max-width: @tablet-small - 1) {
+      height: 200px;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 24px;
+
+    color: @color-text;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.25;
+
+    @media screen and (max-width: @phone-landscape) {
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+
+  b {
+    color: @color-text;
+  }
+
+  h1 {
+    font-size: 78px;
+    font-weight: 300;
+    line-height: 1.25;
+
+    @media screen and (max-width: @desktop-small) {
+      font-size: 48px;
+    }
+
+    @media screen and (max-width: @phone-landscape) {
+      font-size: 33px;
+    }
+  }
+
+  h2 {
+    font-size: 33px;
+    font-weight: 300;
+
+    @media screen and (max-width: @phone-landscape) {
+      font-size: 20px;
+    }
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 1.33;
+
+    @media screen and (max-width: @phone-landscape) {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  table {
+    width: 100%;
+    min-width: 540px;
+  }
+
+  th {
+    padding: 4px 16px;
+
+    color: @color-text-second;
+    background-color: @color-second;
+    font-weight: 400;
+  }
+
+  td {
+    display: block;
+    display: table-cell;
+
+    padding: 12px 16px;
+
+    border-bottom: 1px solid @color-seventh;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+
+    @media screen and (min-width: @tablet-small) {
+      display: table-cell;
+    }
+  }
+
+  .is-wrap {
+    transition: @transition;
+    overflow: auto;
+    background-image:
+      /* Shadows */
+      linear-gradient(to right, @color-first, @color-first),
+      linear-gradient(to right, @color-first, @color-first),
+      /* Shadow covers */
+      linear-gradient(to right, rgba(0, 0, 0, .25), rgba(255, 255, 255, 0)),
+      linear-gradient(to left, rgba(0, 0, 0, .25), rgba(255, 255, 255, 0));
+    background-position: left center, right center, left center, right center;
+    background-repeat: no-repeat;
+    background-size: 20px 100%, 20px 100%, 15px 100%, 15px 100%;
+    background-attachment: local, local, scroll, scroll;
+  }
+}

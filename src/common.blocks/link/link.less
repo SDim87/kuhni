@@ -1,0 +1,34 @@
+@import (reference) '../../less/variables.less';
+
+.link {
+  color: @color-second;
+  transition: @transition;
+  backface-visibility: hidden;
+
+  &:hover,
+  &:focus {
+    color: @color-brand;
+  }
+
+  &_second {
+    color: @color-fifth;
+
+    &:hover,
+    &:focus {
+      color: @color-second;
+    }
+  }
+
+  &_brand {
+    color: @color-brand;
+
+    &:hover,
+    &:focus {
+      color: @color-brand-light;
+    }
+
+    &:active {
+      color: @color-brand-dark;
+    }
+  }
+}

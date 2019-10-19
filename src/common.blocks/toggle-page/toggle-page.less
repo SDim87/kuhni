@@ -1,0 +1,83 @@
+@import (reference) '../../less/variables.less';
+
+.toggle-page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle-page__link {
+  display: flex;
+}
+
+.toggle-page__img {
+  width: 80px;
+  height: 80px;
+  flex: 0 0 auto;
+
+  @media screen and (max-width: @tablet) {
+    display: none;
+  }
+
+  &_prev,
+  &_next {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+}
+
+.toggle-page__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &_prev {
+    margin-left: 24px;
+    margin-right: 16px;
+
+    @media screen and (max-width: @tablet) {
+      margin-left: 0;
+    }
+  }
+
+  &_next {
+    margin-right: 24px;
+    margin-left: 16px;
+    text-align: right;
+
+    @media screen and (max-width: @tablet) {
+      margin-right: 0;
+    }
+  }
+}
+
+.toggle-page__name {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.25;
+  transition: @transition;
+
+  @media screen and (max-width: @tablet) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: @tablet-small) {
+    display: none;
+  }
+
+  .toggle-page__link:hover & {
+    color: @color-brand;
+  }
+}
+
+.toggle-page__arrow {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  line-height: 1.6;
+  max-width: 100px;
+
+  &_next {
+    margin-left: auto;
+  }
+}

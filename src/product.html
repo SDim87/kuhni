@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff0000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <title>Kitchens</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body class="body">
+  <div class="body__bg body__bg_product js-slider-product__bg"></div>
+  <header class="header js-header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="logo logo_header js-header__logo" href="index.html" aria-label="Логотип">
+          <img class="image image_logo is-opened" src="./common.blocks/logo/logo.svg" alt="Логотип Нестандартные кухни">
+          <svg class="icon icon_logo icon_logo_nav image_logo image_logo_black" focusable="false">
+            <use xlink:href="#logo-black"></use>
+          </svg>
+          <svg class="icon icon_logo icon_logo_nav image_logo_white" focusable="false">
+            <use xlink:href="#logo-white"></use>
+          </svg>
+        </a>
+        <button class="header__btn js-header__btn">
+          <span>Меню</span>
+          <span class="is-opened">Закрыть</span>
+          <svg class="icon icon_second icon_size_l icon_burger is-opened" focusable="false">
+            <use xlink:href="#hamburger"></use>
+          </svg>
+          <svg class="icon icon_second icon_size_l icon_close" focusable="false">
+            <use xlink:href="#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="header__menu js-header__menu">
+      <nav class="nav">
+        <div class="nav__left">
+          <ul class="nav__list">
+            <li class="nav__item js-nav__item is-active"
+              data-background="${require('./common.blocks/nav/nav__bg_1.jpg')}">
+              <a class="nav__link">О нас</a>
+            </li>
+            <li class="nav__item js-nav__item" data-background="${require('./common.blocks/nav/nav__bg_2.jpg')}">
+              <a href="categories.html" class="nav__link">Кухни</a>
+            </li>
+            <li class="nav__item js-nav__item" data-background="${require('./common.blocks/nav/nav__bg_3.jpg')}">
+              <a href="article-list.html" class="nav__link">Покупателям</a>
+            </li>
+            <li class="nav__item js-nav__item" data-background="${require('./common.blocks/nav/nav__bg_4.jpg')}">
+              <a href="reviews.html" class="nav__link">Отзывы</a>
+            </li>
+            <li class="nav__item js-nav__item" data-background="${require('./common.blocks/nav/nav__bg_5.jpg')}">
+              <a href="contacts.html" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__right">
+          <div class="nav__bg js-nav__bg"
+            style="background-image: url(${require('./common.blocks/nav/nav__bg_default.jpg')})"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main main_indent_inner js-header__main">
+    <div class="container">
+      <div class="body__indent body__indent_m">
+        <section class="product">
+          <div class="product__left">
+            <div class="square square_small js-square_small"></div>
+            <h1 class="title title_one title_indent_m">Хьюстон Бета</h1>
+            <div class="user-content user-content_small user-content_center user-content_order_m">
+              <p>Нестан­дарт­ны­ми при­ня­то счи­тать кух­ни, име­ю­щие необыч­ную фор­му, раз­ме­ры или пла­ни­ров­ку.
+                Они мо­гут по­явить­ся бла­го­да­ря неис­ся­ка­е­мой фан­та­зии про­ек­ти­ров­щи­ков на­ших до­мов
+                или пе­ре­пла­ни­ров­ке квар­ти­ры са­ми­ми жиль­ца­ми, объ­еди­ня­ю­щи­ми в одно це­лое раз­ные
+                по­ме­ще­ния или их ча­сти. Кра­си­во и с удоб­ством об­ста­вить стан­дарт­ной ме­бе­лью ку­хон­ное
+                по­ме­ще­ние с ни­ша­ми, ко­ро­ба­ми, непра­виль­ны­ми уг­ла­ми, до­пол­ни­тель­ны­ми ок­на­ми,
+                эр­ке­ра­ми и дру­ги­ми нега­ба­рит­ны­ми эле­мен­та­ми прак­ти­че­ски невоз­мож­но.</p>
+            </div>
+            <div class="buy">
+              <div class="buy__wrapper">
+                <p class="buy__price">300 000 *</p>
+                <p class="buy__mark">* цена за кухню размером 6х3 метра</p>
+              </div>
+              <div class="buy__btn">
+                <a class="button button_brand js-button_popup-form" href="#popup-form"
+                  data-effect="mfp-zoom-in"><span>Заказать просчет</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product__right">
+            <div class="slider-product">
+              <div class="slider-product__top swiper-container js-slider-product__top">
+                <div class="swiper-wrapper js-gallery__product">
+                  <div class="slider-product__slide swiper-slide js-slider-product__slide"
+                    data-href="${require('./common.blocks/slider-product/slider-product__img-1.jpg')}">
+                  </div>
+                  <div class="slider-product__slide swiper-slide js-slider-product__slide"
+                    data-href="${require('./common.blocks/slider-product/slider-product__img-2.jpg')}">
+                  </div>
+                  <div class="slider-product__slide swiper-slide js-slider-product__slide"
+                    data-href="${require('./common.blocks/slider-product/slider-product__img-3.jpg')}">
+                  </div>
+                  <div class="slider-product__slide swiper-slide js-slider-product__slide"
+                    data-href="${require('./common.blocks/slider-product/slider-product__img-4.jpg')}">
+                  </div>
+                  <div class="slider-product__slide swiper-slide js-slider-product__slide"
+                    data-href="${require('./common.blocks/slider-product/slider-product__img-4.jpg')}">
+                  </div>
+                  <div class="slider-product__slide swiper-slide js-slider-product__slide"
+                    data-href="${require('./common.blocks/slider-product/slider-product__img-4.jpg')}">
+                  </div>
+                  <div class="slider-product__slide swiper-slide js-slider-product__slide"
+                    data-href="${require('./common.blocks/slider-product/slider-product__img-4.jpg')}">
+                  </div>
+                </div>
+              </div>
+              <div class="slider-product__thumbs js-slider-product__thumbs">
+                <div class="slider-product__container js-slider-product__container">
+                  <div class="slider-product__wrapper swiper-wrapper">
+                    <div class="slider-product__thumbs-slide"
+                      style="background-image: url(${require('./common.blocks/slider-product/slider-product__img-1.jpg')})">
+                    </div>
+                    <div class="slider-product__thumbs-slide"
+                      style="background-image: url(${require('./common.blocks/slider-product/slider-product__img-2.jpg')})">
+                    </div>
+                    <div class="slider-product__thumbs-slide"
+                      style="background-image: url(${require('./common.blocks/slider-product/slider-product__img-3.jpg')})">
+                    </div>
+                    <div class="slider-product__thumbs-slide"
+                      style="background-image: url(${require('./common.blocks/slider-product/slider-product__img-4.jpg')})">
+                    </div>
+                    <div class="slider-product__thumbs-slide"
+                      style="background-image: url(${require('./common.blocks/slider-product/slider-product__img-4.jpg')})">
+                    </div>
+                    <div class="slider-product__thumbs-slide"
+                      style="background-image: url(${require('./common.blocks/slider-product/slider-product__img-4.jpg')})">
+                    </div>
+                    <div class="slider-product__thumbs-slide"
+                      style="background-image: url(${require('./common.blocks/slider-product/slider-product__img-4.jpg')})">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-pagination swiper-pagination js-slider-pagination"></div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+      <div class="body__indent body__indent_m">
+        <section class="toggle-page">
+          <h2 class="visually-hidden">Постраничная навигация</h2>
+          <a class="toggle-page__link" href="#">
+            <div class="toggle-page__img toggle-page__img_prev js-toggle-page__img"
+              data-image="${require('./common.blocks/toggle-page/toggle-page__img-1.jpg')}">
+            </div>
+            <div class="toggle-page__box toggle-page__box_prev">
+              <p class="toggle-page__name">9 вариантов, где проходная кухня рядом с коридором</p>
+              <p class="toggle-page__arrow">
+                <svg class="icon icon_size_xs icon_second" focusable="false">
+                  <use xlink:href="#arrow-left"></use>
+                </svg> Предыдущая
+              </p>
+            </div>
+          </a>
+          <a class="toggle-page__link" href="#">
+            <div class="toggle-page__box toggle-page__box_next">
+              <p class="toggle-page__name">Как правильно: Освободить кухонный фартук</p>
+              <p class="toggle-page__arrow toggle-page__arrow_next">Следующая
+                <svg class="icon icon_size_xs icon_second" focusable="false">
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </p>
+            </div>
+            <div class="toggle-page__img toggle-page__img_next js-toggle-page__img"
+              data-image="${require('./common.blocks/toggle-page/toggle-page__img-1.jpg')}"></div>
+          </a>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <ul class="footer__left">
+          <li class="footer__item">
+            <a class="footer__link link link_second" href="https://yandex.ru/maps/-/CGv1yQZ1" target="_blank">
+              <svg class="icon icon_size_sm icon_brand" focusable="false">
+                <use xlink:href="#marker-map"></use>
+              </svg>
+              <span>Московская область, рабочий посёлок Новоивановское, ул. Агрохимиков, 1 (ТЦ «Мебель России»)</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link link_second" href="https://yandex.ru/maps/-/CGv1yS3G" target="_blank">
+              <svg class="icon icon_size_sm icon_brand" focusable="false">
+                <use xlink:href="#marker-map"></use>
+              </svg>
+              <span>Московская область, г. Красногорск, ул. Ленина, 2 (ТЦ «Красный кит»)</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link link_second" href="https://yandex.ru/maps/-/CGv1yXOU" target="_blank">
+              <svg class="icon icon_size_sm icon_brand" focusable="false">
+                <use xlink:href="#marker-map"></use>
+              </svg>
+              <span>Московская область, г. Мытищи, Шараповский проезд, 2с4</span>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__right">
+          <a class="logo" href="index.html">
+            <svg class="icon icon_logo_footer" focusable="false">
+              <use xlink:href="#logo-footer"></use>
+            </svg>
+          </a>
+          <p class="footer__info">Производитель нестандартных кухонь в Москве и Подмосковье, 2019</p>
+          <a class="footer__phone link link_second" href="tel:+74956425000">+7(495) 642-50-00</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="pattern pattern_small"></div>
+
+  <div class="popup mfp-with-anim mfp-hide" id="popup-form">
+    <form class="form" action="#">
+      <div class="form-group">
+        <input class="form-control" id="name" type="text" autocomplete="on" required>
+        <span class="form__line"></span>
+        <label class="control-label" for="name">Как Вас зовут?</label>
+      </div>
+      <div class="form-group has-error">
+        <input class="form-control" id="phone" type="tel" autocomplete="on" required>
+        <span class="form__line"></span>
+        <label class="control-label" for="phone">Номер телефона</label>
+        <div class="help-block">Поле обязательно к заполнению</div>
+      </div>
+      <div class="form-group has-access">
+        <input class="form-control" id="email" type="email" autocomplete="on" required>
+        <span class="form__line"></span>
+        <label class="control-label" for="email">email</label>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control form-control_textarea" id="message" name="message"></textarea>
+        <span class="form__line"></span>
+        <label class="control-label" for="message">Комментарий к заявке</label>
+      </div>
+      <button class="button button_brand button_size_m button_centered"><span>Отправить</span></button>
+    </form>
+    <div class="popup__thanks">
+      <!-- display: block for open -->
+      <p class="popup__text">Спасибо за заявку!</p>
+      <p class="popup__text">Наши менеджеры свяжутся с вами в ближайшее время!</p>
+    </div>
+  </div>
+  <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <div class="slides"></div>
+    <p class="title"></p>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+  </div>
+</body>
+
+</html>

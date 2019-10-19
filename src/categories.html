@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff0000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <title>Kitchens</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body class="body">
+  <div class="body__bg js-category__bg"></div>
+  <header class="header js-header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="logo logo_header js-header__logo" href="index.html" aria-label="Логотип">
+          <img class="image image_logo is-opened" src="./common.blocks/logo/logo.svg" alt="Логотип Нестандартные кухни">
+          <svg class="icon icon_logo icon_logo_nav image_logo image_logo_black" focusable="false">
+            <use xlink:href="#logo-black"></use>
+          </svg>
+          <svg class="icon icon_logo icon_logo_nav image_logo_white" focusable="false">
+            <use xlink:href="#logo-white"></use>
+          </svg>
+        </a>
+        <button class="header__btn js-header__btn">
+          <span>Меню</span>
+          <span class="is-opened">Закрыть</span>
+          <svg class="icon icon_second icon_size_l icon_burger is-opened" focusable="false">
+            <use xlink:href="#hamburger"></use>
+          </svg>
+          <svg class="icon icon_second icon_size_l icon_close" focusable="false">
+            <use xlink:href="#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="header__menu js-header__menu">
+      <nav class="nav">
+        <div class="nav__left">
+          <ul class="nav__list">
+            <li class="nav__item js-nav__item is-active"
+              data-background="${require('./common.blocks/nav/nav__bg_1.jpg')}">
+              <a class="nav__link">О нас</a>
+            </li>
+            <li class="nav__item js-nav__item" data-background="${require('./common.blocks/nav/nav__bg_2.jpg')}">
+              <a href="categories.html" class="nav__link">Кухни</a>
+            </li>
+            <li class="nav__item js-nav__item" data-background="${require('./common.blocks/nav/nav__bg_3.jpg')}">
+              <a href="article-list.html" class="nav__link">Покупателям</a>
+            </li>
+            <li class="nav__item js-nav__item" data-background="${require('./common.blocks/nav/nav__bg_4.jpg')}">
+              <a href="reviews.html" class="nav__link">Отзывы</a>
+            </li>
+            <li class="nav__item js-nav__item" data-background="${require('./common.blocks/nav/nav__bg_5.jpg')}">
+              <a href="contacts.html" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__right">
+          <div class="nav__bg js-nav__bg"
+            style="background-image: url(${require('./common.blocks/nav/nav__bg_default.jpg')})"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main main_indent_inner js-header__main">
+    <div class="container container_tablet">
+      <section class="categories">
+        <h1 class="title title_one title_absolute js-title_absolute">Кухни, которые радуют</h1>
+        <ul class="categories__grid">
+          <li class="categories__item categories__item_first js-categories__item js-title_categories">
+            <a href="#" class="categories__link">
+              <img class="image" src="./common.blocks/categories/categories__img_small-1.jpg" alt="img"
+                data-body="${require('./common.blocks/categories/categories__img_big-1.jpg')}">
+              <div class="categories__content categories__content_tf">
+                <h2 class="title title_three">Лофт</h2>
+                <p class="categories__text">Осо­бен­но­стью это­го сти­ля яв­ля­ет­ся со­че­та­ние су­пер­со­вре­мен­ных
+                  ма­те­ри­а­лов с от­ре­ста­ври­ро­ван­ны­ми по­ла­ми, кир­пич­ной клад­кой и гру­бой шту­ка­тур­кой
+                  на сте­нах, тру­ба­ми «на виду». Сли­я­ние но­во­го и ста­ро­го здесь смот­рит­ся как ни­где
+                  гар­мо­нич­но.</p>
+              </div>
+            </a>
+          </li>
+          <li class="categories__item categories__item_second js-categories__item">
+            <a href="#" class="categories__link">
+              <img class="image" src="./common.blocks/categories/categories__img_small-2.jpg" alt="img"
+                data-body="${require('./common.blocks/categories/categories__img_big-2.jpg')}">
+              <div class="categories__content categories__content_tf">
+                <h2 class="title title_three">Хай-Тек</h2>
+                <p class="categories__text">Осо­бен­но­стью это­го сти­ля яв­ля­ет­ся со­че­та­ние су­пер­со­вре­мен­ных
+                  ма­те­ри­а­лов с от­ре­ста­ври­ро­ван­ны­ми по­ла­ми, кир­пич­ной клад­кой и гру­бой шту­ка­тур­кой
+                  на сте­нах, тру­ба­ми «на виду». Сли­я­ние но­во­го и ста­ро­го здесь смот­рит­ся как ни­где
+                  гар­мо­нич­но.</p>
+              </div>
+            </a>
+          </li>
+          <li class="categories__item categories__item_third js-categories__item">
+            <a href="#" class="categories__link">
+              <img class="image" src="./common.blocks/categories/categories__img_small-3.jpg" alt="img"
+                data-body="${require('./common.blocks/categories/categories__img_big-3.jpg')}">
+              <div class="categories__content categories__content_tf">
+                <h2 class="title title_three">Классика</h2>
+                <p class="categories__text">Осо­бен­но­стью это­го сти­ля яв­ля­ет­ся со­че­та­ние су­пер­со­вре­мен­ных
+                  ма­те­ри­а­лов с от­ре­ста­ври­ро­ван­ны­ми по­ла­ми, кир­пич­ной клад­кой и гру­бой шту­ка­тур­кой
+                  на сте­нах, тру­ба­ми «на виду». Сли­я­ние но­во­го и ста­ро­го здесь смот­рит­ся как ни­где
+                  гар­мо­нич­но.</p>
+              </div>
+            </a>
+          </li>
+          <li class="categories__item categories__item_fourth js-categories__item">
+            <a href="#" class="categories__link">
+              <img class="image" src="./common.blocks/categories/categories__img_small-4.jpg" alt="img"
+                data-body="${require('./common.blocks/categories/categories__img_big-4.jpg')}">
+              <div class="categories__content categories__content_tf">
+                <h2 class="title title_three">Неоклассика</h2>
+                <p class="categories__text">Осо­бен­но­стью это­го сти­ля яв­ля­ет­ся со­че­та­ние су­пер­со­вре­мен­ных
+                  ма­те­ри­а­лов с от­ре­ста­ври­ро­ван­ны­ми по­ла­ми, кир­пич­ной клад­кой и гру­бой шту­ка­тур­кой
+                  на сте­нах, тру­ба­ми «на виду». Сли­я­ние но­во­го и ста­ро­го здесь смот­рит­ся как ни­где
+                  гар­мо­нич­но.</p>
+              </div>
+            </a>
+          </li>
+          <li class="categories__item categories__item_fifth">
+            <div class="categories__link categories__link_last">
+              <div class="categories__content categories__content_last">
+                <a href="#popup-form" class="button button_brand button_size_m js-button_popup-form"
+                  data-effect="mfp-zoom-in"><span>Оставить заявку</span></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <ul class="footer__left">
+          <li class="footer__item">
+            <a class="footer__link link link_second" href="https://yandex.ru/maps/-/CGv1yQZ1" target="_blank">
+              <svg class="icon icon_size_sm icon_brand" focusable="false">
+                <use xlink:href="#marker-map"></use>
+              </svg>
+              <span>Московская область, рабочий посёлок Новоивановское, ул. Агрохимиков, 1 (ТЦ «Мебель России»)</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link link_second" href="https://yandex.ru/maps/-/CGv1yS3G" target="_blank">
+              <svg class="icon icon_size_sm icon_brand" focusable="false">
+                <use xlink:href="#marker-map"></use>
+              </svg>
+              <span>Московская область, г. Красногорск, ул. Ленина, 2 (ТЦ «Красный кит»)</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link link_second" href="https://yandex.ru/maps/-/CGv1yXOU" target="_blank">
+              <svg class="icon icon_size_sm icon_brand" focusable="false">
+                <use xlink:href="#marker-map"></use>
+              </svg>
+              <span>Московская область, г. Мытищи, Шараповский проезд, 2с4</span>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__right">
+          <a class="logo" href="index.html">
+            <svg class="icon icon_logo_footer" focusable="false">
+              <use xlink:href="#logo-footer"></use>
+            </svg>
+          </a>
+          <p class="footer__info">Производитель нестандартных кухонь в Москве и Подмосковье, 2019</p>
+          <a class="footer__phone link link_second" href="tel:+74956425000">+7(495) 642-50-00</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="pattern pattern_small"></div>
+
+  <div class="popup mfp-with-anim mfp-hide" id="popup-form">
+    <form class="form" action="#">
+      <div class="form-group">
+        <input class="form-control" id="name" type="text" autocomplete="on">
+        <span class="form__line"></span>
+        <label class="control-label" for="name">Как Вас зовут?</label>
+      </div>
+      <div class="form-group">
+        <input class="form-control" id="phone" type="tel" autocomplete="on">
+        <span class="form__line"></span>
+        <label class="control-label" for="phone">Номер телефона</label>
+      </div>
+      <div class="form-group">
+        <input class="form-control" id="email" type="email" autocomplete="on">
+        <span class="form__line"></span>
+        <label class="control-label" for="email">email</label>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control form-control_textarea" id="message" name="message"></textarea>
+        <span class="form__line"></span>
+        <label class="control-label" for="message">Комментарий к заявке</label>
+      </div>
+      <button class="button button_brand button_size_m button_centered"><span>Отправить</span></button>
+    </form>
+  </div>
+</body>
+
+</html>

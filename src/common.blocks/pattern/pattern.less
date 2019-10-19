@@ -1,0 +1,24 @@
+@import (reference) '../../less/variables.less';
+
+.pattern {
+  position: absolute;
+  content: '';
+  z-index: -1;
+
+
+  &_small {
+    top: 185px;
+    left: 0;
+    width: 368px;
+    height: 575px;
+    background: svg-load('lines.svg', fill=#fff, fill-opacity=.2) repeat 50% 50%;
+
+    clip-path: polygon(0 23%, 100% 0, 100% 77%, 0 100%);
+
+     @media screen and (max-width: @tablet-small) {
+      width: 245px;
+      height: 380px;
+      top: 96px;
+    }
+  }
+}

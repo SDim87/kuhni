@@ -1,0 +1,126 @@
+@import (reference) "../../less/variables.less";
+
+.body {
+  position: relative;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: @color-first;
+}
+
+.body__bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-color: @color-black-first;
+  }
+
+  &_product::before {
+    background-color: @color-dark-thick;
+  }
+
+  &.is-opened {
+    animation: opened 0.3s ease-in-out forwards;
+
+    @keyframes opened {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+
+  &.is-closed {
+    animation: closed 0.3s ease-in-out forwards;
+
+    @keyframes closed {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.body__indent {
+  &_xxl {
+    margin-bottom: 360px;
+
+    @media screen and (max-width: @desktop-small) {
+      margin-bottom: 200px;
+    }
+
+    @media screen and (max-width: @phone-landscape) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &_l {
+    margin-bottom: 120px;
+
+    @media screen and (max-width: @desktop-small) {
+      margin-bottom: 200px;
+    }
+
+    @media screen and (max-width: @phone-landscape) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &_m {
+    margin-bottom: 120px;
+
+    @media screen and (max-width: @desktop-small) {
+      margin-bottom: 80px;
+    }
+
+    @media screen and (max-width: @phone-landscape) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &_mobile {
+    margin-bottom: 80px;
+  }
+}
+
+.body__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
+
+  @media screen and (max-width: @tablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (max-width: @tablet-small) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: @phone) {
+    display: block;
+  }
+}

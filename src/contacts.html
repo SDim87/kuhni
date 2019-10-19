@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff0000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <title>Kitchens</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body class="body">
+  <div class="body__bg js-category__bg"></div>
+  <header class="header js-header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="logo logo_header js-header__logo" href="index.html" aria-label="Логотип">
+          <img class="image image_logo is-opened" src="./common.blocks/logo/logo.svg" alt="Логотип Нестандартные кухни">
+          <svg class="icon icon_logo icon_logo_nav image_logo image_logo_black" focusable="false">
+            <use xlink:href="#logo-black"></use>
+          </svg>
+          <svg class="icon icon_logo icon_logo_nav image_logo_white" focusable="false">
+            <use xlink:href="#logo-white"></use>
+          </svg>
+        </a>
+        <button class="header__btn js-header__btn">
+          <span>Меню</span>
+          <span class="is-opened">Закрыть</span>
+          <svg class="icon icon_second icon_size_l icon_burger is-opened" focusable="false">
+            <use xlink:href="#hamburger"></use>
+          </svg>
+          <svg class="icon icon_second icon_size_l icon_close" focusable="false">
+            <use xlink:href="#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="header__menu js-header__menu">
+      <nav class="nav">
+        <div class="nav__left">
+          <ul class="nav__list">
+            <li class="nav__item js-nav__item is-active"
+              data-background="${require('./common.blocks/nav/nav__bg_1.jpg')}">
+              <a class="nav__link">О нас</a>
+            </li>
+            <li class="nav__item js-nav__item" data-background="${require('./common.blocks/nav/nav__bg_2.jpg')}">
+              <a href="categories.html" class="nav__link">Кухни</a>
+            </li>
+            <li class="nav__item js-nav__item" data-background="${require('./common.blocks/nav/nav__bg_3.jpg')}">
+              <a href="article-list.html" class="nav__link">Покупателям</a>
+            </li>
+            <li class="nav__item js-nav__item" data-background="${require('./common.blocks/nav/nav__bg_4.jpg')}">
+              <a href="reviews.html" class="nav__link">Отзывы</a>
+            </li>
+            <li class="nav__item js-nav__item" data-background="${require('./common.blocks/nav/nav__bg_5.jpg')}">
+              <a href="contacts.html" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__right">
+          <div class="nav__bg js-nav__bg"
+            style="background-image: url(${require('./common.blocks/nav/nav__bg_default.jpg')})"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main main_indent_inner js-header__main">
+    <div class="container container_small">
+      <div class="body__indent body__indent_m">
+        <section class="contacts">
+          <div class="contacts__head">
+            <div class="square square_small js-square_small"></div>
+            <h1 class="title title_one title_indent_ml">Контакты</h1>
+          </div>
+
+          <div class="contacts__wrap">
+            <div class="contacts__left">
+              <div class="contacts__box">
+                <a class="contacts__phone link" href="tel:+74993912444">+7 (499) 391-24-44</a>
+                <p class="contacts__descr">горячая линия</p>
+              </div>
+              <div class="contacts__box">
+                <a class="contacts__phone link" href="tel:+79259182543">+7 (925) 918-25-43</a>
+                <p class="contacts__descr">технический отдел</p>
+              </div>
+              <div class="contacts__box">
+                <a class="contacts__phone link" href="tel:+79259182544">+7 (925) 918-25-44</a>
+                <p class="contacts__descr">служба логистики</p>
+              </div>
+              <div class="contacts__box">
+                <a class="contacts__phone link" href="tel:+79259182540">+7 (925) 918-25-40</a>
+                <p class="contacts__descr">отдел продаж на Можайском Шоссе</p>
+              </div>
+              <div class="contacts__box">
+                <a class="contacts__phone link" href="tel:+79259182542">+7 (925) 918-25-42</a>
+                <p class="contacts__descr">отдел продаж на Ярославском Шоссе</p>
+              </div>
+            </div>
+            <div class="contacts__right">
+              <div class="contacts__address">
+                <svg class="icon icon_brand icon_size_xl" focusable="false">
+                  <use xlink:href="#marker-map"></use>
+                </svg>
+                <p class="contacts__text">Россия, Московская область, рабочий посёлок Новоивановское, ул. Агрохимиков, 1
+                  (ТЦ
+                  «Мебель России»)</p>
+              </div>
+              <div class="contacts__address">
+                <svg class="icon icon_brand icon_size_xl" focusable="false">
+                  <use xlink:href="#marker-map"></use>
+                </svg>
+                <p class="contacts__text">Россия, Московская область, г. Красногорск, ул. Ленина, 2 (ТЦ «Красный кит»)
+                </p>
+              </div>
+              <div class="contacts__address">
+                <svg class="icon icon_brand icon_size_xl" focusable="false">
+                  <use xlink:href="#marker-map"></use>
+                </svg>
+                <p class="contacts__text">Россия, Московская область, г. Мытищи, Шараповский проезд, 2с4</p>
+              </div>
+              <div class="contacts__btn">
+                <a href="#" class="button button_brand"><span>Показать на Яндекс Карте</span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <ul class="footer__left">
+          <li class="footer__item">
+            <a class="footer__link link link_second" href="https://yandex.ru/maps/-/CGv1yQZ1" target="_blank">
+              <svg class="icon icon_size_sm icon_brand" focusable="false">
+                <use xlink:href="#marker-map"></use>
+              </svg>
+              <span>Московская область, рабочий посёлок Новоивановское, ул. Агрохимиков, 1 (ТЦ «Мебель России»)</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link link_second" href="https://yandex.ru/maps/-/CGv1yS3G" target="_blank">
+              <svg class="icon icon_size_sm icon_brand" focusable="false">
+                <use xlink:href="#marker-map"></use>
+              </svg>
+              <span>Московская область, г. Красногорск, ул. Ленина, 2 (ТЦ «Красный кит»)</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link link_second" href="https://yandex.ru/maps/-/CGv1yXOU" target="_blank">
+              <svg class="icon icon_size_sm icon_brand" focusable="false">
+                <use xlink:href="#marker-map"></use>
+              </svg>
+              <span>Московская область, г. Мытищи, Шараповский проезд, 2с4</span>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__right">
+          <a class="logo" href="index.html">
+            <svg class="icon icon_logo_footer" focusable="false">
+              <use xlink:href="#logo-footer"></use>
+            </svg>
+          </a>
+          <p class="footer__info">Производитель нестандартных кухонь в Москве и Подмосковье, 2019</p>
+          <a class="footer__phone link link_second" href="tel:+74956425000">+7(495) 642-50-00</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="pattern pattern_small"></div>
+
+  <div class="popup mfp-with-anim mfp-hide" id="popup-form">
+    <form class="form" action="#">
+      <div class="form-group">
+        <input class="form-control" id="name" type="text" autocomplete="on">
+        <span class="form__line"></span>
+        <label class="control-label" for="name">Как Вас зовут?</label>
+      </div>
+      <div class="form-group">
+        <input class="form-control" id="phone" type="tel" autocomplete="on">
+        <span class="form__line"></span>
+        <label class="control-label" for="phone">Номер телефона</label>
+      </div>
+      <div class="form-group">
+        <input class="form-control" id="email" type="email" autocomplete="on">
+        <span class="form__line"></span>
+        <label class="control-label" for="email">email</label>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control form-control_textarea" id="message" name="message"></textarea>
+        <span class="form__line"></span>
+        <label class="control-label" for="message">Комментарий к заявке</label>
+      </div>
+      <button class="button button_brand button_size_m button_centered"><span>Отправить</span></button>
+    </form>
+  </div>
+</body>
+
+</html>

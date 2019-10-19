@@ -1,0 +1,33 @@
+@import (reference) '../../less/variables.less';
+.product {
+  display: flex;
+
+  @media screen and (max-width: @tablet) {
+    flex-direction: column;
+  }
+}
+
+.product__left {
+  margin-right: 40px;
+  position: relative;
+
+  @media screen and (max-width: @tablet) {
+    order: 2;
+    margin-right: 0;
+  }
+}
+
+.product__right {
+  width: 57.32%;
+  flex: 0 0 auto;
+  
+  @media screen and (max-width: @tablet) {
+    width: 80%;
+    order: 1;
+    margin: 0 auto 40px;
+  }
+
+  @media screen and (max-width: @tablet-small) {
+    width: 100%;
+  }
+}

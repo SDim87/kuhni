@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff0000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <title>Kitchens</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body class="body">
+  <div class="preloader js-animate__preloader">
+    <svg class="preloader__icon" xmlns="http://www.w3.org/2000/svg" width="373" height="31" viewBox="0 0 373 31">
+      <style type="text/css">
+        @media (max-width: 567px) {
+          .preloader__icon {
+            width: 240px;
+          }
+        }
+      </style>
+      <path fill="#DB4C40"
+        d="M36.818 28.027a.38.38 0 0 1-.35.18.372.372 0 0 1-.325-.223l-.112-.25.601-.97.407.908-.221.355zm-1.167-1.142l-.405-.908.6-.971.406.907-.6.972zm-.711 1.15a.382.382 0 0 1-.351.179.373.373 0 0 1-.325-.224l-.11-.248.6-.971.406.907-.22.357zm-1.168-1.144l-.405-.907.6-.972.406.908-.6.97zm-.71 1.15a.38.38 0 0 1-.352.18.37.37 0 0 1-.324-.224l-.111-.249.6-.971.407.908-.22.356zm-1.168-1.143l-.406-.908.6-.97.408.907-.602.971zm-.71 1.15a.38.38 0 0 1-.352.18.375.375 0 0 1-.325-.224l-.11-.249.6-.971.406.907-.22.357zm-1.168-1.144L21.323 7.473l.533-1.122 8.76 19.582-.6.971zm-.711 1.15a.383.383 0 0 1-.675-.044L20.354 9.512l.532-1.123 8.64 19.31-.221.355zM19.445 7.48l.533-1.122.494 1.106-.533 1.121-.495-1.105zm-.91-2.032l.533-1.122.495 1.105-.533 1.123-.494-1.106zm-.909-2.032l.533-1.122.494 1.106-.532 1.12-.495-1.104zm-.91-2.032l.177-.372a.378.378 0 0 1 .347-.217c.096.012.255.015.349.224l.156.349-.534 1.121-.494-1.105zm2.056-.379a.377.377 0 0 1 .346-.217c.095.008.256.015.349.224l.156.349-.533 1.121-.494-1.105.176-.372zm1.266 1.282l.494 1.105L20 4.515l-.495-1.105.534-1.123zM20.65.998a.379.379 0 0 1 .347-.216c.094.002.255.015.349.224l.155.348-.533 1.122-.495-1.105.177-.373zm.79 4.427l-.532 1.121-.495-1.105.533-1.122.495 1.106zm.475-3.145l.495 1.106-.533 1.122-.494-1.105.532-1.123zM22.53.992a.377.377 0 0 1 .346-.217.347.347 0 0 1 .35.224l.154.349-.532 1.12-.495-1.104.177-.372zm9.18 23.176l-.6.972L22.29 5.434l.534-1.121 8.884 19.855zM23.794 2.274l9.006 20.13-.6.971-8.94-19.98.534-1.12zm9.793 21.888l-.601.971-.406-.907.601-.971.406.907zM24.407.985a.375.375 0 0 1 .346-.216c.091-.008.255.014.35.224l8.79 19.646-.602.972L24.23 1.357l.177-.372zM34.68 22.397l-.6.972-.407-.907.601-.972.406.907zm.38.852l.406.907-.6.97-.407-.907.6-.97zM56.027.01l-17.33 28.011a.387.387 0 0 1-.351.18.377.377 0 0 1-.325-.225l-.111-.247L55.059.01h-.907L37.53 26.878l-.406-.908L53.185.01h-.906L36.742 25.12l-.405-.908L51.31.01h-.906L35.957 23.362l-.407-.907L49.437.01h-.907L35.17 21.604l-.406-.907L47.564.01h-.907L34.384 19.846 25.809.683a1.143 1.143 0 0 0-1.043-.679c-.403-.037-.743.176-.955.494a1.14 1.14 0 0 0-.924-.488c-.404-.033-.741.178-.954.495a1.141 1.141 0 0 0-.924-.488c-.405-.03-.742.179-.955.495a1.137 1.137 0 0 0-.924-.489c-.404-.027-.742.18-.955.496a1.137 1.137 0 0 0-.924-.488c-.405-.025-.74.179-.953.495a1.136 1.136 0 0 0-.924-.488c-.476-.026-.865.245-1.06.656L.868 28.983h.854L15.015 1.018a.375.375 0 0 1 .346-.216c.098.018.255.015.35.224l.155.348L2.741 28.983h.855L16.281 2.3l.495 1.106-12.16 25.576h.856L17.19 4.333l.495 1.105L6.492 28.983h.854L18.1 6.365l.494 1.105L8.366 28.983h.855l9.787-20.586.495 1.106-9.262 19.48h.855l8.82-18.555 8.005 17.891c.175.39.552.65.982.678.412.03.789-.163 1.018-.49.2.276.509.458.86.483.412.028.789-.163 1.019-.49a1.144 1.144 0 0 0 1.878-.006 1.148 1.148 0 0 0 1.879-.007 1.145 1.145 0 0 0 1.878-.007c.198.276.507.46.86.483a1.15 1.15 0 0 0 1.061-.544L56.933.01h-.906z" />
+      <path class="preloader__icon-text" fill="#f6e8ea" fill-opacity="0.56"
+        d="M73.232 15.136v13.125h-2.83v-5.499h-7.789v5.5h-2.848V15.135h2.848v5.14h7.788v-5.14h2.831zm16.428 0v2.471h-8.419v2.848h7.878l-.992 2.398h-6.886v2.94h9.014v2.468H78.392V15.136H89.66zm16.626 3.282a9.148 9.148 0 0 0-4.49-1.19c-3.209 0-5.174 1.712-5.174 4.29 0 2.759 2.236 4.544 5.535 4.544 1.839 0 3.624-.541 5.03-1.496v2.83c-1.532.775-3.299 1.172-5.156 1.172-4.958 0-8.294-2.795-8.294-6.977 0-4.04 3.138-6.78 8.078-6.78 1.785 0 3.606.362 5.463 1.173l-.993 2.434zm16.156-3.282v2.506h-5.12v10.62h-2.83v-10.62h-5.103v-2.506h13.053zm5.52 8.042h5.427l-2.722-5.661-2.705 5.66zm-5.283 5.084l6.365-13.126h3.353l6.364 13.126h-3.083l-1.316-2.723h-7.392l-1.298 2.723h-2.993zm32.78-13.126v13.125h-2.831v-5.499h-7.788v5.5h-2.848V15.135h2.848v5.14h7.788v-5.14h2.83zm7.738 10.656h6.923l-3.48-7.951-3.443 7.95zm5.229-10.656l4.705 10.656h1.515l-.29 4.759h-2.397v-2.29h-10.673l-.198 2.29h-2.398v-4.76h1.514l4.724-10.655h3.498zm12.803 8.042h5.427l-2.723-5.661-2.704 5.66zm-5.283 5.084l6.365-13.126h3.353l6.364 13.126h-3.082l-1.317-2.723h-7.392l-1.298 2.723h-2.993zm27.281-13.126c2.974 0 4.85 1.66 4.85 4.291 0 2.614-1.839 4.201-4.85 4.201h-4.2l1.062-2.47h3.354c1.172 0 1.785-.72 1.785-1.785 0-1.172-.739-1.766-1.857-1.766h-5.265v10.654h-2.848V15.136h7.97zm20.015 0v2.506h-5.12v10.62h-2.83v-10.62h-5.103v-2.506h13.053zm16.68 0v13.125h-2.83v-5.499h-7.79v5.5h-2.848V15.135h2.848v5.14h7.79v-5.14h2.83zm20.989 13.125V15.136h2.848v13.125h-2.848zM247.93 15.136v10.656h5.083c1.28 0 2.038-.668 2.038-1.768 0-1.099-.758-1.784-2.038-1.784h-4.164l1.028-2.452h3.136c3.03 0 4.887 1.586 4.887 4.218 0 2.633-1.857 4.255-4.887 4.255h-7.932V15.136h2.849zm32.24 0v2.471h-8.42v2.848h7.88l-.992 2.398h-6.887v2.94h9.014v2.468h-11.863V15.136h11.268zm24.902 0l-5.769 6.058 6.238 7.067h-3.678l-6.094-6.958 5.86-6.167h3.443zm-12.89 13.125V15.136h2.848v13.125h-2.849zm18.896 0l2.615-4.921-1.551.27-5.3-8.473h3.263l4.273 6.905L318 15.137h3.156l-7.068 13.125h-3.011zm25.929-13.125l-5.264 6.527 5.517 6.598h-3.57l-4.02-4.795-3.86 4.795h-3.334l5.517-6.814-5.264-6.31h3.57l3.749 4.488 3.605-4.489h3.354zm17.148 0v13.125h-2.83v-5.499h-7.789v5.5h-2.849V15.135h2.85v5.14h7.788v-5.14h2.83zm8.009 0v9.213l7.698-9.213h2.83v13.125h-2.83v-9.195l-7.698 9.195h-2.85V15.136h2.85z" />
+    </svg>
+  </div>
+  <header class="header js-header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="logo logo_header js-header__logo" href="index.html" aria-label="Логотип">
+          <img class="image image_logo is-opened" src="./common.blocks/logo/logo.svg" alt="Логотип Нестандартные кухни">
+          <svg class="icon icon_logo icon_logo_nav image_logo image_logo_black" focusable="false">
+            <use xlink:href="#logo-black"></use>
+          </svg>
+          <svg class="icon icon_logo icon_logo_nav image_logo_white" focusable="false">
+            <use xlink:href="#logo-white"></use>
+          </svg>
+        </a>
+        <button class="header__btn js-header__btn">
+          <span>Меню</span>
+          <span class="is-opened">Закрыть</span>
+          <svg class="icon icon_second icon_size_l icon_burger is-opened" focusable="false">
+            <use xlink:href="#hamburger"></use>
+          </svg>
+          <svg class="icon icon_second icon_size_l icon_close" focusable="false">
+            <use xlink:href="#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="header__menu js-header__menu">
+      <nav class="nav">
+        <div class="nav__left">
+          <ul class="nav__list">
+            <li class="nav__item js-nav__item is-active"
+              data-background="${require('./common.blocks/nav/nav__bg_1.jpg')}">
+              <a class="nav__link">О нас</a>
+            </li>
+            <li class="nav__item js-nav__item" data-background="${require('./common.blocks/nav/nav__bg_2.jpg')}">
+              <a href="categories.html" class="nav__link">Кухни</a>
+            </li>
+            <li class="nav__item js-nav__item" data-background="${require('./common.blocks/nav/nav__bg_3.jpg')}">
+              <a href="article-list.html" class="nav__link">Покупателям</a>
+            </li>
+            <li class="nav__item js-nav__item" data-background="${require('./common.blocks/nav/nav__bg_4.jpg')}">
+              <a href="reviews.html" class="nav__link">Отзывы</a>
+            </li>
+            <li class="nav__item js-nav__item" data-background="${require('./common.blocks/nav/nav__bg_5.jpg')}">
+              <a href="contacts.html" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__right">
+          <div class="nav__bg js-nav__bg"
+            style="background-image: url(${require('./common.blocks/nav/nav__bg_default.jpg')})"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main main_indent_main js-header__main">
+    <div class="body__indent body__indent_mobile">
+      <div class="container">
+        <section class="banner">
+          <div class="banner__left">
+            <h1 class="title title_one title_size_xl banner__title animate__title js-animate__title">Производство
+              нестандартных кухонь в Москве
+              и Подмосковье</h1>
+            <div class="banner__content animate__banner-content js-animate__banner-content">
+              <p class="banner__text">Нестан­дарт­ны­ми при­ня­то счи­тать кух­ни, име­ю­щие необыч­ную фор­му,
+                раз­ме­ры или пла­ни­ров­ку. Они мо­гут по­явить­ся бла­го­да­ря неис­ся­ка­е­мой фан­та­зии
+                про­ек­ти­ров­щи­ков на­ших до­мов или пе­ре­пла­ни­ров­ке квар­ти­ры са­ми­ми жиль­ца­ми,
+                объ­еди­ня­ю­щи­ми в одно це­лое раз­ные по­ме­ще­ния или их ча­сти. Кра­си­во и с удоб­ством
+                об­ста­вить стан­дарт­ной ме­бе­лью ку­хон­ное по­ме­ще­ние с ни­ша­ми, ко­ро­ба­ми, непра­виль­ны­ми
+                уг­ла­ми, до­пол­ни­тель­ны­ми ок­на­ми, эр­ке­ра­ми и дру­ги­ми нега­ба­рит­ны­ми эле­мен­та­ми
+                прак­ти­че­ски невоз­мож­но.</p>
+              <a class="banner__phone" href="tel:+7(495)642-50-00">+7(495) 642-50-00</a>
+            </div>
+          </div>
+          <div class="banner__right animate__banner-right js-animate__banner-right"
+            style="background-image: url(${require('./common.blocks/banner/banner__image.jpg')})"></div>
+          <div class="square square_banner js-square_banner"></div>
+        </section>
+        <div class="mark-animate"></div>
+      </div>
+    </div>
+    <div class="body__indent body__indent_xxl">
+      <section class="main-card js-main-card">
+        <div class="container">
+          <div class="main-card__wrapper">
+            <div class="main-card__left">
+              <div class="square square_pos_first js-square"></div>
+              <div class="main-card__content">
+                <h2 class="title title_two title_rotate title_size_s js-title_parallax">Кухни лофт</h2>
+                <div class="js-main-card__text">
+                  <p class="main-card__text">Осо­бен­но­стью это­го
+                    сти­ля яв­ля­ет­ся со­че­та­ние су­пер­со­вре­мен­ных ма­те­ри­а­лов с от­ре­ста­ври­ро­ван­ны­ми
+                    по­ла­ми, кир­пич­ной клад­кой и гру­бой шту­ка­тур­кой на сте­нах, тру­ба­ми «на виду». Сли­я­ние
+                    но­во­го и ста­ро­го здесь смот­рит­ся как ни­где гар­мо­нич­но.</p>
+                  <p class="main-card__text main-card__text_none_tablet">От­лич­но впи­шет­ся кух­ня в духе Лофт,
+                    на­при­мер, в квар­ти­ру в «ста­лин­ке», в до­ре­во­лю­ци­он­ном доме или в но­вострой­ке
+                    с ин­ди­ви­ду­аль­ной пла­ни­ров­кой и вы­со­ки­ми (чем выше, тем луч­ше) по­тол­ка­ми.</p>
+                </div>
+              </div>
+            </div>
+            <div class="main-card__right js-main-card__right"
+              style="background-image: url(${require('./common.blocks/main-card/main-card_img-1.jpg')})"></div>
+          </div>
+          <div class="main-card__decor js-main-card__decor"></div>
+        </div>
+      </section>
+      <section class="main-card main-card_reverse js-main-card js-main-card_reverse">
+        <div class="container">
+          <div class="main-card__wrapper">
+            <div class="main-card__left">
+              <div class="square square_pos_first js-square"></div>
+              <div class="main-card__content">
+                <h2 class="title title_two title_rotate title_size_s js-title_parallax">Кухни хай-тек
+                </h2>
+                <p class="main-card__text js-main-card__text">Стиль хай-тек
+                  от­лич­но
+                  под­хо­дит для ма­лень­кой кух­ни и неболь­шой квар­ти­ры-сту­дии: в нем мно­го све­та, воз­ду­ха
+                  и сво­бод­но­го про­стран­ства. При гра­мот­ном под­хо­де даже на очень огра­ни­чен­ной пло­ща­ди вы
+                  смо­же­те раз­ме­стить все необ­хо­ди­мое. Хай-тек сле­ду­ет глав­ным прин­ци­пам ми­ни­ма­лиз­ма:
+                  в ин­те­рье­ре кух­ни нет ни­че­го лиш­не­го, а каж­дая вещь име­ет свое ме­сто.</p>
+              </div>
+            </div>
+            <div class="main-card__right js-main-card__right"
+              style="background-image: url(${require('./common.blocks/main-card/main-card_img-2.jpg')})"></div>
+          </div>
+          <div class="main-card__decor js-main-card__decor"></div>
+        </div>
+      </section>
+      <section class="main-card js-main-card">
+        <div class="container">
+          <div class="main-card__wrapper">
+            <div class="main-card__left">
+              <div class="square square_pos_first js-square"></div>
+              <div class="main-card__content">
+                <h2 class="title title_two title_rotate title_size_s js-title_parallax">Кухни классика</h2>
+                <p class="main-card__text js-main-card__text">Что сра­зу
+                  бро­са­ет­ся
+                  в гла­за на фото клас­си­че­ских ку­хонь, пред­став­лен­ных в ка­та­ло­ге? Чет­кое по­стро­е­ние
+                  ком­по­зи­ции от услов­но­го цен­тра, в ка­че­стве ко­то­ро­го мо­жет быть вы­бра­на пли­та, боль­шой
+                  шкаф или дру­гой еди­нич­ный объ­ект ин­те­рье­ра. Ди­зайн клас­си­че­ской кух­ни все­гда вклю­ча­ет
+                  иде­аль­ную ор­га­ни­за­цию про­стран­ства, ор­га­нич­но со­че­та­ю­щу­ю­ся с его ра­ци­о­наль­ным
+                  ис­поль­зо­ва­ни­ем.</p>
+              </div>
+            </div>
+            <div class="main-card__right js-main-card__right"
+              style="background-image: url(${require('./common.blocks/main-card/main-card_img-3.jpg')})">
+            </div>
+          </div>
+          <div class="main-card__decor js-main-card__decor"></div>
+        </div>
+      </section>
+      <section class="main-card main-card_reverse js-main-card js-main-card_reverse">
+        <div class="container">
+          <div class="main-card__wrapper">
+            <div class="main-card__left">
+              <div class="square square_pos_first js-square"></div>
+              <div class="main-card__content">
+                <h2 class="title title_two title_rotate title_size_s js-title_parallax">Кухни неоклассика
+                </h2>
+                <p class="main-card__text js-main-card__text">Слож­но
+                  вы­брать меж­ду
+                  яр­ким ди­зай­ном со­вре­мен­ных ку­хонь и бла­го­род­ной кра­со­той клас­си­че­ских? Лю­бые
+                  со­мне­ния раз­ре­шит нео­клас­си­че­ский стиль — ак­ту­аль­ная ин­тер­пре­та­ция клас­си­ки.
+                  Эле­гант­ные кух­ни Нео­клас­си­ка сти­ра­ют неуло­ви­мую грань меж­ду про­шлым и бу­ду­щим. Со­че­тая
+                  эле­мен­ты тра­ди­ци­он­но­го и со­вре­мен­но­го ди­зай­на, при­выч­ные фор­мы и но­вей­шую тех­ни­ку,
+                  эти мо­де­ли со­зда­ют по-на­сто­я­ще­му уют­ное и удоб­ное про­стран­ство.</p>
+              </div>
+            </div>
+            <div class="main-card__right js-main-card__right"
+              style="background-image: url(${require('./common.blocks/main-card/main-card_img-4.jpg')})">
+            </div>
+          </div>
+          <div class="main-card__decor js-main-card__decor"></div>
+        </div>
+      </section>
+    </div>
+    <section class="slider-main">
+      <div class="container">
+        <div class="slider-main__top">
+          <h2 class="title title_two title_position title_size_s">Примеры кухонь</h2>
+        </div>
+      </div>
+      <div class="slider-main__wrapper">
+        <div class="slider-main__container js-slider-main__container swiper-container">
+          <div class="swiper-wrapper">
+            <article class="slider-main__slide swiper-slide">
+              <div class="slider-main__content">
+                <div class="slider-main__box">
+                  <h3 class="slider-main__title">Скандинавия 2</h3>
+                  <a class="slider-main__link link" href="#">Узнать больше</a>
+                </div>
+              </div>
+              <div class="slider-main__img swiper-lazy"
+                data-background="${require('./common.blocks/slider-main/slider-main__img_1.jpg')}">
+                <div class="swiper-lazy-preloader"></div>
+              </div>
+            </article>
+            <article class="slider-main__slide swiper-slide">
+              <div class="slider-main__content">
+                <div class="slider-main__box">
+                  <h3 class="slider-main__title">Бостон</h3>
+                  <a class="slider-main__link link" href="#">Узнать больше</a>
+                </div>
+              </div>
+              <div class="slider-main__img swiper-lazy"
+                data-background="${require('./common.blocks/slider-main/slider-main__img_1.jpg')}">
+                <div class="swiper-lazy-preloader"></div>
+              </div>
+            </article>
+            <article class="slider-main__slide swiper-slide">
+              <div class="slider-main__content">
+                <div class="slider-main__box">
+                  <h3 class="slider-main__title">Манхеттен бежевый</h3>
+                  <a class="slider-main__link link" href="#">Узнать больше</a>
+                </div>
+              </div>
+              <div class="slider-main__img swiper-lazy"
+                data-background="${require('./common.blocks/slider-main/slider-main__img_1.jpg')}">
+                <div class="swiper-lazy-preloader"></div>
+              </div>
+            </article>
+            <article class="slider-main__slide swiper-slide">
+              <div class="slider-main__content">
+                <div class="slider-main__box">
+                  <h3 class="slider-main__title">Гранат Z2002</h3>
+                  <a class="slider-main__link link" href="#">Узнать больше</a>
+                </div>
+              </div>
+              <div class="slider-main__img swiper-lazy"
+                data-background="${require('./common.blocks/slider-main/slider-main__img_1.jpg')}">
+                <div class="swiper-lazy-preloader"></div>
+              </div>
+            </article>
+            <article class="slider-main__slide swiper-slide">
+              <div class="slider-main__content">
+                <div class="slider-main__box">
+                  <h3 class="slider-main__title">Венге A350</h3>
+                  <a class="slider-main__link link" href="#">Узнать больше</a>
+                </div>
+              </div>
+              <div class="slider-main__img swiper-lazy"
+                data-background="${require('./common.blocks/slider-main/slider-main__img_1.jpg')}">
+                <div class="swiper-lazy-preloader"></div>
+              </div>
+            </article>
+            <div class="slider-main__slide swiper-slide"></div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-pagination swiper-pagination js-slider-pagination"></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <ul class="footer__left">
+          <li class="footer__item">
+            <a class="footer__link link link_second" href="https://yandex.ru/maps/-/CGv1yQZ1" target="_blank"
+              rel="noreferrer">
+              <svg class="icon icon_size_sm icon_brand" focusable="false">
+                <use xlink:href="#marker-map"></use>
+              </svg>
+              <span>Московская область, рабочий посёлок Новоивановское, ул. Агрохимиков, 1 (ТЦ «Мебель России»)</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link link_second" href="https://yandex.ru/maps/-/CGv1yS3G" target="_blank"
+              rel="noreferrer">
+              <svg class="icon icon_size_sm icon_brand" focusable="false">
+                <use xlink:href="#marker-map"></use>
+              </svg>
+              <span>Московская область, г. Красногорск, ул. Ленина, 2 (ТЦ «Красный кит»)</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link link_second" href="https://yandex.ru/maps/-/CGv1yXOU" target="_blank"
+              rel="noreferrer">
+              <svg class="icon icon_size_sm icon_brand" focusable="false">
+                <use xlink:href="#marker-map"></use>
+              </svg>
+              <span>Московская область, г. Мытищи, Шараповский проезд, 2с4</span>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__right">
+          <a class="logo" href="index.html">
+            <svg class="icon icon_logo_footer" focusable="false">
+              <use xlink:href="#logo-footer"></use>
+            </svg>
+          </a>
+          <p class="footer__info">Производитель нестандартных кухонь в Москве и Подмосковье, 2019</p>
+          <a class="footer__phone link link_second" href="tel:+74956425000">+7(495) 642-50-00</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="pattern pattern_small"></div>
+</body>
+
+</html>

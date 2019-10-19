@@ -1,0 +1,53 @@
+@import (reference) '../../less/variables.less';
+
+.buy {
+  margin-top: 88px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: @tablet-landscape) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (max-width: @phone-landscape) {
+    margin-top: 0;
+  }
+}
+
+.buy__wrapper {
+  margin-bottom: 16px;
+  margin-right: 16px;
+}
+
+.buy__price {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.25;
+
+  @media screen and (max-width: @tablet-landscape) {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (max-width: @phone-landscape) {
+    font-size: 33px;
+  }
+}
+
+.buy__mark {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.buy__btn {
+  @media screen and (max-width: @phone-small) {
+    width: 100%;
+  }
+  & .button {
+    @media screen and (max-width: @phone-small) {
+      width: 100%;
+    }
+  }
+}

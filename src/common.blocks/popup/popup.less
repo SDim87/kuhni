@@ -1,0 +1,40 @@
+@import (reference) '../../less/variables.less';
+
+.popup {
+  max-width: 480px;
+  background-color: @color-second;
+  margin: 0 auto;
+  padding: 56px;
+  position: relative;
+  box-sizing: border-box;
+
+  @media screen and (max-width: @phone-landscape) {
+    padding: 48px 24px;
+  }
+
+  .mfp-close {
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    transition: @transition;
+  }
+}
+
+.popup__thanks {
+  text-align: center;
+}
+
+.popup__text {
+  color: @color-text-second;
+  
+  &:first-child {
+    font-size: 24px;
+    margin-bottom: 16px;
+  
+    @media screen and (max-width: @phone-landscape) {
+      font-size: 30px;
+    }
+  }
+}

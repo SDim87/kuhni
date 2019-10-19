@@ -1,0 +1,62 @@
+@import (reference) '../../less/variables.less';
+
+.button {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: @transition;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  color: @color-second;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 48px;
+
+  & span {
+    position: relative;
+    backface-visibility: hidden;
+    z-index: 2;
+  }
+
+  &_brand {
+    background-color: @color-brand;
+  }
+
+  &_brand::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    transition: @transition;
+    transform: scaleX(0);
+    border-radius: 2px;
+    background-color: @color-brand-light;
+  }
+
+  &_brand:hover:before,
+  &_brand:focus:before {
+    transform: scaleX(1);
+  }
+
+  &_brand:active:before {
+    background-color: @color-brand-dark;
+  }
+
+  &_size_m {
+    min-width: 200px;
+  }
+
+  &_centered {
+    display: block;
+    margin: 0 auto;
+  }
+}

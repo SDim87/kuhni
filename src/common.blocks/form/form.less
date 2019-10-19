@@ -1,0 +1,127 @@
+@import (reference) '../../less/variables.less';
+
+.form {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+.form-group {
+  position: relative;
+
+  &:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 56px;
+  }
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 32px;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid @color-black-third;
+  border-radius: 0;
+  background: transparent;
+  font-size: 16px;
+  line-height: 32px;
+  color: @color-sixth;
+
+  &:focus {
+    outline: none;
+  }
+
+  &_textarea {
+    min-height: 80px;
+    line-height: 1.25;
+    resize: none;
+  }
+}
+
+.control-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: @transition;
+  text-transform: uppercase;
+  pointer-events: none;
+  color: @color-sixth;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.25;
+
+  .form-group.is-used & {
+    top: -14px;
+    font-size: 10px;
+  }
+
+  .form-group.has-error & {
+    color: @color-brand;
+  }
+
+  .form-group.has-access & {
+    color: @color-access;
+  }
+}
+
+
+.form__line {
+  position: relative;
+  display: block;
+  width: 100%;
+
+  &::before,
+  &::after {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    content: '';
+    transition: @transition;
+  }
+
+  &::before {
+    left: 50%;
+    background-color: @color-black-first;
+  }
+
+  &::after {
+    right: 50%;
+    background-color: @color-black-first;
+  }
+
+  .form-group.is-used &::before,
+  .form-group.is-used &::after {
+    width: 50%;
+  }
+
+  .form-group.has-error &::before,
+  .form-group.has-error &::after {
+    background-color: @color-brand;
+  }
+
+  .form-group.has-access &::before,
+  .form-group.has-access &::after {
+    background-color: @color-access;
+  }
+}
+
+.form-group.has-error .help-block {
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+  color: @color-brand;
+  font-size: 10px;
+  line-height: 12px;
+}

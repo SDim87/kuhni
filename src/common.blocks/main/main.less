@@ -1,0 +1,49 @@
+@import (reference) '../../less/variables.less';
+
+.main {
+  flex: 1 0 auto;
+  
+  &.is-padded {
+    margin-top: 144px;
+
+    @media screen and (max-width: @tablet) {
+      margin-top: 136px;
+    }
+
+    @media screen and (max-width: @phone-landscape) {
+      margin-top: 104px;
+    }
+  }
+
+  &_indent_inner.is-padded {
+    margin-top: 184px;
+
+    @media screen and (max-width: @tablet) {
+      margin-top: 144px;
+    }
+
+    @media screen and (max-width: @phone-landscape) {
+      margin-top: 112px;
+    }
+  }
+
+  &_indent_main {
+    margin-top: 40px;
+
+    @media screen and (max-width: @tablet) {
+      margin-top: 32px;
+    }
+
+    @media screen and (max-width: @phone-landscape) {
+      margin-top: 32px;
+    }
+  }
+
+  &_indent_inner {
+    margin-top: 80px;
+
+    @media screen and (max-width: @tablet) {
+      margin-top: 40px;
+    }
+  }
+}

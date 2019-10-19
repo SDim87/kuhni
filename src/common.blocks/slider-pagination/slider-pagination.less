@@ -1,0 +1,32 @@
+@import (reference) '../../less/variables.less';
+
+.slider-pagination {
+  position: static;
+
+  display: none;
+  justify-content: center;
+
+  height: 4px;
+  margin-top: 24px;
+
+   @media screen and (max-width: @phone-landscape) {
+    display: flex;
+  }
+
+  .swiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+
+    opacity: 1;
+    background-color: @color-gray-normal;
+    transition: @transition;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: @color-brand;
+  }
+}

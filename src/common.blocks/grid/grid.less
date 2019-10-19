@@ -1,0 +1,140 @@
+@import (reference) '../../less/variables.less';
+
+.grid__list {
+  display: grid;
+
+  list-style-type: none;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px 40px;
+
+  @media screen and (max-width: @tablet-landscape) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+  }
+
+  @media screen and (max-width: @tablet-small) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: @phone) {
+    display: block;
+  }
+}
+
+.grid__item {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.grid__link {
+  position: relative;
+
+  display: block;
+  overflow: hidden;
+
+  height: 100%;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    opacity: 0;
+    background-color: @color-brand;
+    content: '';
+    transition: @transition;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+}
+
+.grid__link img {
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.grid__link .link {
+  @media screen and (max-width: @tablet-landscape) {
+    font-size: 14px;
+  }
+}
+
+.grid__link:hover .link {
+  @media screen and (min-width: @tablet-landscape + 1) {
+    opacity: 0;
+  }
+}
+
+.grid__content {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  height: 50%;
+  padding: 24px;
+
+  background-image: @gradient-third;
+  transition: @transition;
+
+  backface-visibility: hidden;
+
+  .grid__link:hover & {
+    @media screen and (min-width: @tablet-landscape + 1) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0));
+    }
+  }
+}
+
+.grid__box {
+  transition: @transition;
+  transform: translateY(61%);
+
+  @media screen and (max-width: @tablet-landscape) {
+    transform: none;
+  }
+
+  .grid__link:hover & {
+    @media screen and (min-width: @tablet-landscape + 1) {
+      transform: translateY(0);
+    }
+  }
+}
+
+.grid__title {
+  margin-bottom: 32px;
+
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.25;
+
+  @media screen and (max-width: @tablet-landscape) {
+    font-size: 20px;
+  }
+}
+
+.grid__text {
+  opacity: 0;
+  transition: @transition;
+
+  @media screen and (max-width: @tablet-landscape) {
+    display: none;
+  }
+
+  .grid__link:hover & {
+    @media screen and (min-width: @tablet-landscape + 1) {
+      opacity: 1;
+    }
+  }
+}

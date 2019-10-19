@@ -1,0 +1,179 @@
+@import (reference) '../../less/variables.less';
+
+.title {
+  &_one {
+    font-size: 78px;
+    font-weight: 300;
+    line-height: 1.25;
+
+    @media screen and (max-width: @tablet) {
+      font-size: 48px;
+    }
+
+    @media screen and (max-width: @phone-landscape) {
+      font-size: 33px;
+    }
+  }
+
+  &_two {
+    text-shadow: 16px -16px 0 rgba(0, 0, 0, .18);
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 300;
+    line-height: .71;
+
+    @media screen and (max-width: @desktop-small) {
+      font-size: 40px;
+      line-height: 1.25;
+    }
+
+    @media screen and (max-width: @tablet) {
+      font-size: 25px;
+    }
+  }
+
+  &_three {
+    text-shadow: 16px -16px 0 rgba(0, 0, 0, .18);
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.25;
+
+    @media screen and (max-width: @tablet) {
+      font-size: 25px;
+    }
+  }
+
+  &_four {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.25;
+
+    @media screen and (max-width: @tablet-landscape) {
+      font-size: 25px;
+    }
+
+    @media screen and (max-width: @phone-landscape) {
+      font-size: 30px;
+    }
+
+    @media screen and (max-width: @phone-small) {
+      font-size: 25px;
+    }
+  }
+
+  &_rotate {
+    position: absolute;
+    z-index: 5;
+    top: -150px;
+    left: 40px;
+
+    text-shadow: 16px 16px 0 rgba(0, 0, 0, .18);
+    white-space: nowrap;
+    line-height: 1.6;
+    writing-mode: vertical-lr;
+
+    backface-visibility: hidden;
+
+    @media screen and (max-width: @desktop-small) {
+      top: 12px;
+      left: 32px;
+    }
+
+    @media screen and (max-width: @tablet) {
+      top: 80px;
+      left: 32px;
+    }
+
+    @media screen and (max-width: @phone-landscape) {
+      position: relative;
+      top: 0;
+      left: 0;
+
+      text-shadow: 16px -16px 0 rgba(0, 0, 0, .18);
+      transform: none;
+      white-space: normal;
+      writing-mode: horizontal-tb;
+    }
+  }
+
+  &_position {
+    position: relative;
+    z-index: 1;
+  }
+
+  &_size_xl {
+    max-width: 1248px;
+  }
+
+  &_size_s {
+    @media screen and (max-width: @phone-landscape) {
+      max-width: 165px;
+    }
+  }
+
+  &_absolute {
+    position: absolute;
+    left: 50%;
+
+    max-width: 360px;
+
+    transform: translateX(-50%);
+    text-align: center;
+
+    @media screen and (max-width: @tablet) {
+      max-width: 230px;
+    }
+
+    @media screen and (max-width: @tablet-small) {
+      position: static;
+
+      max-width: none;
+
+      transform: none;
+      text-align: center;
+      font-size: 78px;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+
+    @media screen and (max-width: @phone-landscape) {
+      font-size: 40px;
+    }
+  }
+
+  &_indent_l {
+    margin-bottom: 32px;
+    margin-left: 112px;
+
+    @media screen and (max-width: @tablet-landscape) {
+      margin-left: 0;
+
+      text-align: center;
+    }
+  }
+
+  &_indent_m {
+    max-width: 384px;
+    margin-bottom: 40px;
+    margin-left: 32px;
+
+    @media screen and (max-width: @phone-landscape) {
+      margin-left: 0;
+    }
+  }
+
+  &_indent_ml {
+    margin-left: 32px;
+    padding-top: 40px;
+
+    @media screen and (max-width: @tablet-small) {
+      margin-left: 16px;
+      padding-top: 0;
+    }
+  }
+
+  &_width_auto {
+    max-width: none;
+  }
+}

@@ -1,0 +1,83 @@
+@import (reference) '../../less/variables.less';
+
+.slider-product {}
+
+.slider-product__top {
+  width: 100%;
+  height: 80%;
+}
+
+.slider-product__slide,
+.slider-product__thumbs-slide {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.slider-product__slide {
+  padding-top: 75%;
+  position: relative;
+}
+
+.slider-product__thumbs {
+  position: relative;
+
+  margin-top: 8px;
+
+  @media screen and (max-width: @phone-landscape) {
+    display: none;
+  }
+}
+
+.slider-product__container {
+  overflow: hidden;
+}
+
+.slider-product__wrapper {
+  display: flex;
+
+  width: 100%;
+  position: relative;
+}
+
+.slider-product__thumbs-slide {
+  min-width: 120px;
+  height: 90px;
+
+  transition: @transition;
+
+  flex-shrink: 0;
+  cursor: pointer;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: @color-black;
+    transition: @transition;
+  }
+
+  &:hover::before {
+    @media screen and (min-width: @desktop-small) {
+      background-color: transparent;
+    }
+  }
+
+  &.swiper-slide-thumb-active::before {
+    background-color: transparent;
+  }
+}
+
+.slider-product__btn-group {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: @phone) {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,94 @@
+@import (reference) '../../less/variables.less';
+
+.icon {
+  transition: @transition;
+  flex: 1 0 auto;
+
+  &_logo {
+    width: 372px;
+    height: 31px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+     @media screen and (max-width: @phone-landscape) {
+      width: 226px;
+      height: 18px;
+    }
+  }
+
+  &_logo_footer {
+    width: 304px;
+    height: 25px;
+
+     @media screen and (max-width: @tablet) {
+      width: 232px;
+      height: 18px;
+    }
+  }
+
+  &_logo.is-opened {
+    opacity: 1;
+  }
+
+  &.is-opened {
+    opacity: 1;
+  }
+
+  &_burger {
+    opacity: 0;
+  }
+
+  &_close {
+    position: absolute;
+    right: 0;
+    top: 0; 
+    opacity: 0;
+  }
+
+  &_zoom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &_second {
+    fill: @color-second;
+  }
+
+  &_brand {
+    fill: @color-brand;
+  }
+
+  &_size_xs {
+    width: 16px;
+    height: 16px;
+  }
+
+  &_size_sm {
+    width: 20px;
+    height: 20px;
+  }
+
+  &_size_m {
+    width: 24px;
+    height: 24px;
+  }
+
+  &_size_ml {
+    width: 32px;
+    height: 32px;
+  }
+
+  &_size_l {
+    width: 40px;
+    height: 40px;
+  }
+
+  &_size_xl {
+    width: 56px;
+    height: 56px;
+  }
+}
