@@ -23,7 +23,7 @@ module.exports = {
     common: ['./src/index.js'],
   },
   output: {
-    path: path.resolve(__dirname, './public'),
+    path: path.resolve(__dirname, './'),
     publicPath: '/',
     //   filename: isDevelopment ? '[name].js' : '[name]-[chunkhash:10].js'
     filename: 'js/[name].js',
