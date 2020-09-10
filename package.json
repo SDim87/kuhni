@@ -7,7 +7,6 @@
     "url": "https://onlinebees.visualstudio.com/kitchens"
   },
   "scripts": {
-    "heroku-postbuild": "NODE_ENV=production webpack heroku config:set NPM_CONFIG_PRODUCTION=false NODE_MODULES_CACHE=false",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --host 0.0.0.0 --watch",
     "dev-hot": "cross-env NODE_ENV=development webpack-dev-server --open --hot --watch",
     "build": "cross-env NODE_ENV=production webpack"
@@ -23,7 +22,8 @@
     ]
   },
   "engines": {
-    "node": "12.x"
+    "node": "12.x",
+    "npm": "6.x"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
