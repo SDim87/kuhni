@@ -7,9 +7,10 @@
     "url": "https://onlinebees.visualstudio.com/kitchens"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --host 0.0.0.0 --port 8000 --watch",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --host 0.0.0.0 --watch",
     "dev-hot": "cross-env NODE_ENV=development webpack-dev-server --open --hot --watch",
-    "build": "cross-env NODE_ENV=production webpack"
+    "build": "cross-env NODE_ENV=production webpack heroku config:set NPM_CONFIG_PRODUCTION=false",
+    "heroku-postbuild": "cross-env NODE_ENV=production webpack heroku config:set NPM_CONFIG_PRODUCTION=true"
   },
   "license": "ISC",
   "babel": {
